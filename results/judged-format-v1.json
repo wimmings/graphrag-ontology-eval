@@ -1,0 +1,1970 @@
+{
+  "generated_at": "2026-06-03T06:19:12.269304+00:00",
+  "judge_models": [
+    "grok/grok-4.3"
+  ],
+  "judge_prompt_id": "finder_judge@v1",
+  "n_judged": 48,
+  "summary": {
+    "S2_FIN_NONQUANT_MULTI|graph|?": {
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "retrieval": "graph",
+      "arm": "?",
+      "n": 16,
+      "judge_score_mean": 0.0,
+      "token_f1_mean": 0.027,
+      "overlap_mean": 0.0,
+      "correct": 0,
+      "partial": 0,
+      "incorrect": 16
+    },
+    "S4_CO_MULTI_NONQUANT|graph|?": {
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "retrieval": "graph",
+      "arm": "?",
+      "n": 16,
+      "judge_score_mean": 0.188,
+      "token_f1_mean": 0.035,
+      "overlap_mean": 0.0,
+      "correct": 3,
+      "partial": 0,
+      "incorrect": 13
+    },
+    "S5_FN_MULTI|graph|?": {
+      "slice": "S5_FN_MULTI",
+      "retrieval": "graph",
+      "arm": "?",
+      "n": 16,
+      "judge_score_mean": 0.469,
+      "token_f1_mean": 0.108,
+      "overlap_mean": 0.175,
+      "correct": 6,
+      "partial": 2,
+      "incorrect": 8
+    }
+  },
+  "inter_judge_agreement": {},
+  "paired_vs_vector": {},
+  "results": [
+    {
+      "case_id": "347bdeaa",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "current",
+      "domain_nodes": 26,
+      "domain_rels": 0,
+      "ctx_chars": 2436,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "EDW's rev growth drivers & sustainability from 2021-23.",
+      "expected_answer": "The data show that net sales increased from $5,232.5 million in 2021 to $6,004.8 million in 2023 – roughly a 15% increase over the period. While the consolidated statements do not provide detailed segment or geographic breakdowns that pinpoint the exact sources of growth, several observations can be made from the financials:\n\n1. Revenue and Margin Trends: The steady increase in net sales along with a consistent gross profit margin (gross profit increased from $3,983.6 million in 2021 to $4,625.0 million in 2023) suggests that the company has managed to grow revenue while maintaining price and cost discipline. This may indicate effective pricing strategies, increased volume, or a favorable mix of high-margin products.\n\n2. Investments in Innovation: The relatively high and growing research and development expense (from $903.1 million in 2021 to $1,071.8 million in 2023) implies that Edwards Lifesciences is investing in its product pipeline. Such investments are often aimed at launching new products or improving existing ones, which can drive future revenue growth.\n\n3. Sales and Marketing Efforts: Selling, general, and administrative expenses also increased over the period. This suggests that the company may be investing more in marketing, distribution, and customer support to expand market reach and capture additional market share.\n\n4. Cost Management and Efficiency: Despite increases in several operating expenses, the company has maintained solid operating income. This indicates that management has been effective in balancing investments in growth (R&D and SG&A) with operational efficiency—a positive sign for sustainable revenue growth.\n\nSustainability of the Growth:\n\n• The sustained investment in R&D supports the idea that the product pipeline is being actively developed, which is a key driver for future sales if new products are well received.\n• Reinforced by maintained or slightly improved margins, the growth appears to be underpinned by both volume expansion and disciplined cost management.\n• However, to fully confirm the sustainability of this growth, one would need additional qualitative information such as market trends in the medical devices sector, competitive positioning, regulatory developments, and strategic initiatives from management. The provided financial statements hint at a robust approach, but a deeper dive into segment-level performance or management commentary would be necessary for a comprehensive assessment.\n\nIn summary, based on the available financial data, Edwards Lifesciences’ revenue growth appears to be supported by increased sales volume, investments in innovation and market expansion, and effective cost management. These factors suggest that the growth may be sustainable, assuming that market conditions remain favorable and the company continues to successfully innovate and capture market share.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 13,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3297.63,
+      "error": "",
+      "token_f1": 0.0183,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context' while GOLD supplies a full data-driven analysis of revenue growth drivers and sustainability; this is explicitly ruled incorrect."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "347bdeaa",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "cypher",
+      "domain_nodes": 26,
+      "domain_rels": 0,
+      "ctx_chars": 2357,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "EDW's rev growth drivers & sustainability from 2021-23.",
+      "expected_answer": "The data show that net sales increased from $5,232.5 million in 2021 to $6,004.8 million in 2023 – roughly a 15% increase over the period. While the consolidated statements do not provide detailed segment or geographic breakdowns that pinpoint the exact sources of growth, several observations can be made from the financials:\n\n1. Revenue and Margin Trends: The steady increase in net sales along with a consistent gross profit margin (gross profit increased from $3,983.6 million in 2021 to $4,625.0 million in 2023) suggests that the company has managed to grow revenue while maintaining price and cost discipline. This may indicate effective pricing strategies, increased volume, or a favorable mix of high-margin products.\n\n2. Investments in Innovation: The relatively high and growing research and development expense (from $903.1 million in 2021 to $1,071.8 million in 2023) implies that Edwards Lifesciences is investing in its product pipeline. Such investments are often aimed at launching new products or improving existing ones, which can drive future revenue growth.\n\n3. Sales and Marketing Efforts: Selling, general, and administrative expenses also increased over the period. This suggests that the company may be investing more in marketing, distribution, and customer support to expand market reach and capture additional market share.\n\n4. Cost Management and Efficiency: Despite increases in several operating expenses, the company has maintained solid operating income. This indicates that management has been effective in balancing investments in growth (R&D and SG&A) with operational efficiency—a positive sign for sustainable revenue growth.\n\nSustainability of the Growth:\n\n• The sustained investment in R&D supports the idea that the product pipeline is being actively developed, which is a key driver for future sales if new products are well received.\n• Reinforced by maintained or slightly improved margins, the growth appears to be underpinned by both volume expansion and disciplined cost management.\n• However, to fully confirm the sustainability of this growth, one would need additional qualitative information such as market trends in the medical devices sector, competitive positioning, regulatory developments, and strategic initiatives from management. The provided financial statements hint at a robust approach, but a deeper dive into segment-level performance or management commentary would be necessary for a comprehensive assessment.\n\nIn summary, based on the available financial data, Edwards Lifesciences’ revenue growth appears to be supported by increased sales volume, investments in innovation and market expansion, and effective cost management. These factors suggest that the growth may be sustainable, assuming that market conditions remain favorable and the company continues to successfully innovate and capture market share.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 13,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 4097.93,
+      "error": "",
+      "token_f1": 0.0183,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' while GOLD provides a full factual analysis of revenue growth drivers and sustainability; this is explicitly ruled incorrect."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "347bdeaa",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "nl",
+      "domain_nodes": 26,
+      "domain_rels": 0,
+      "ctx_chars": 2207,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "EDW's rev growth drivers & sustainability from 2021-23.",
+      "expected_answer": "The data show that net sales increased from $5,232.5 million in 2021 to $6,004.8 million in 2023 – roughly a 15% increase over the period. While the consolidated statements do not provide detailed segment or geographic breakdowns that pinpoint the exact sources of growth, several observations can be made from the financials:\n\n1. Revenue and Margin Trends: The steady increase in net sales along with a consistent gross profit margin (gross profit increased from $3,983.6 million in 2021 to $4,625.0 million in 2023) suggests that the company has managed to grow revenue while maintaining price and cost discipline. This may indicate effective pricing strategies, increased volume, or a favorable mix of high-margin products.\n\n2. Investments in Innovation: The relatively high and growing research and development expense (from $903.1 million in 2021 to $1,071.8 million in 2023) implies that Edwards Lifesciences is investing in its product pipeline. Such investments are often aimed at launching new products or improving existing ones, which can drive future revenue growth.\n\n3. Sales and Marketing Efforts: Selling, general, and administrative expenses also increased over the period. This suggests that the company may be investing more in marketing, distribution, and customer support to expand market reach and capture additional market share.\n\n4. Cost Management and Efficiency: Despite increases in several operating expenses, the company has maintained solid operating income. This indicates that management has been effective in balancing investments in growth (R&D and SG&A) with operational efficiency—a positive sign for sustainable revenue growth.\n\nSustainability of the Growth:\n\n• The sustained investment in R&D supports the idea that the product pipeline is being actively developed, which is a key driver for future sales if new products are well received.\n• Reinforced by maintained or slightly improved margins, the growth appears to be underpinned by both volume expansion and disciplined cost management.\n• However, to fully confirm the sustainability of this growth, one would need additional qualitative information such as market trends in the medical devices sector, competitive positioning, regulatory developments, and strategic initiatives from management. The provided financial statements hint at a robust approach, but a deeper dive into segment-level performance or management commentary would be necessary for a comprehensive assessment.\n\nIn summary, based on the available financial data, Edwards Lifesciences’ revenue growth appears to be supported by increased sales volume, investments in innovation and market expansion, and effective cost management. These factors suggest that the growth may be sustainable, assuming that market conditions remain favorable and the company continues to successfully innovate and capture market share.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 13,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3573.29,
+      "error": "",
+      "token_f1": 0.0183,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context', which is incorrect per rules as GOLD contains the full analysis of revenue growth drivers and sustainability."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "347bdeaa",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "table",
+      "domain_nodes": 26,
+      "domain_rels": 0,
+      "ctx_chars": 1955,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "EDW's rev growth drivers & sustainability from 2021-23.",
+      "expected_answer": "The data show that net sales increased from $5,232.5 million in 2021 to $6,004.8 million in 2023 – roughly a 15% increase over the period. While the consolidated statements do not provide detailed segment or geographic breakdowns that pinpoint the exact sources of growth, several observations can be made from the financials:\n\n1. Revenue and Margin Trends: The steady increase in net sales along with a consistent gross profit margin (gross profit increased from $3,983.6 million in 2021 to $4,625.0 million in 2023) suggests that the company has managed to grow revenue while maintaining price and cost discipline. This may indicate effective pricing strategies, increased volume, or a favorable mix of high-margin products.\n\n2. Investments in Innovation: The relatively high and growing research and development expense (from $903.1 million in 2021 to $1,071.8 million in 2023) implies that Edwards Lifesciences is investing in its product pipeline. Such investments are often aimed at launching new products or improving existing ones, which can drive future revenue growth.\n\n3. Sales and Marketing Efforts: Selling, general, and administrative expenses also increased over the period. This suggests that the company may be investing more in marketing, distribution, and customer support to expand market reach and capture additional market share.\n\n4. Cost Management and Efficiency: Despite increases in several operating expenses, the company has maintained solid operating income. This indicates that management has been effective in balancing investments in growth (R&D and SG&A) with operational efficiency—a positive sign for sustainable revenue growth.\n\nSustainability of the Growth:\n\n• The sustained investment in R&D supports the idea that the product pipeline is being actively developed, which is a key driver for future sales if new products are well received.\n• Reinforced by maintained or slightly improved margins, the growth appears to be underpinned by both volume expansion and disciplined cost management.\n• However, to fully confirm the sustainability of this growth, one would need additional qualitative information such as market trends in the medical devices sector, competitive positioning, regulatory developments, and strategic initiatives from management. The provided financial statements hint at a robust approach, but a deeper dive into segment-level performance or management commentary would be necessary for a comprehensive assessment.\n\nIn summary, based on the available financial data, Edwards Lifesciences’ revenue growth appears to be supported by increased sales volume, investments in innovation and market expansion, and effective cost management. These factors suggest that the growth may be sustainable, assuming that market conditions remain favorable and the company continues to successfully innovate and capture market share.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 13,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 4318.66,
+      "error": "",
+      "token_f1": 0.0183,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context', which is factually wrong per rules since GOLD contains the relevant revenue figures, drivers, and sustainability analysis."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "4f87bbef",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "current",
+      "domain_nodes": 20,
+      "domain_rels": 17,
+      "ctx_chars": 3487,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Liquidity analysis for PFE regarding short-term obligations.",
+      "expected_answer": "Using the data from the 2022 and 2023 balance sheets, we can evaluate Pfizer’s liquidity by looking at the current assets and current liabilities. In 2023, total current assets were $43,333 million compared to current liabilities of $47,794 million, yielding a current ratio of approximately 0.91 (43,333 / 47,794), which is lower than the 2022 ratio of about 1.22 (51,259 / 42,138). This decline suggests that on a purely balance sheet basis, Pfizer’s liquidity position has weakened, since a current ratio below 1 indicates that current liabilities exceed current assets. \n\nIt is important to note some underlying changes: Cash and cash equivalents have increased significantly in 2023 ($2,853 million versus $416 million in 2022), which is a positive liquidity signal; however, this improvement is offset by a substantial reduction in short-term investments (from $22,316 million in 2022 to $9,837 million in 2023) and an overall decrease in current assets. Additionally, the rise in current liabilities—due to various factors including increased short-term borrowings and other current obligations—adds further pressure. \n\nOverall, while the increase in cash provides a cushion, the lower overall current ratio indicates that on a balance sheet basis Pfizer has less liquidity than in the prior year, which could affect its ability to meet short-term obligations if all liabilities came due at once. However, it’s also common for companies to manage liquidity through additional sources (like available credit facilities) which are not reflected in these summary numbers. Thus, while Pfizer’s liquidity metrics point to a tighter short-term financial position, further analysis (including cash flow trends and off-balance sheet arrangements) would be needed for a comprehensive assessment of its ability to meet short-term liabilities.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 15,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2730.54,
+      "error": "",
+      "token_f1": 0.02,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' while GOLD contains the full liquidity analysis and figures; per rules this is incorrect."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "4f87bbef",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "cypher",
+      "domain_nodes": 20,
+      "domain_rels": 17,
+      "ctx_chars": 3496,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Liquidity analysis for PFE regarding short-term obligations.",
+      "expected_answer": "Using the data from the 2022 and 2023 balance sheets, we can evaluate Pfizer’s liquidity by looking at the current assets and current liabilities. In 2023, total current assets were $43,333 million compared to current liabilities of $47,794 million, yielding a current ratio of approximately 0.91 (43,333 / 47,794), which is lower than the 2022 ratio of about 1.22 (51,259 / 42,138). This decline suggests that on a purely balance sheet basis, Pfizer’s liquidity position has weakened, since a current ratio below 1 indicates that current liabilities exceed current assets. \n\nIt is important to note some underlying changes: Cash and cash equivalents have increased significantly in 2023 ($2,853 million versus $416 million in 2022), which is a positive liquidity signal; however, this improvement is offset by a substantial reduction in short-term investments (from $22,316 million in 2022 to $9,837 million in 2023) and an overall decrease in current assets. Additionally, the rise in current liabilities—due to various factors including increased short-term borrowings and other current obligations—adds further pressure. \n\nOverall, while the increase in cash provides a cushion, the lower overall current ratio indicates that on a balance sheet basis Pfizer has less liquidity than in the prior year, which could affect its ability to meet short-term obligations if all liabilities came due at once. However, it’s also common for companies to manage liquidity through additional sources (like available credit facilities) which are not reflected in these summary numbers. Thus, while Pfizer’s liquidity metrics point to a tighter short-term financial position, further analysis (including cash flow trends and off-balance sheet arrangements) would be needed for a comprehensive assessment of its ability to meet short-term liabilities.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 15,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2139.92,
+      "error": "",
+      "token_f1": 0.02,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context' while GOLD contains the full liquidity analysis and figures; this is explicitly INCORRECT per rules."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "4f87bbef",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "nl",
+      "domain_nodes": 20,
+      "domain_rels": 17,
+      "ctx_chars": 3183,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Liquidity analysis for PFE regarding short-term obligations.",
+      "expected_answer": "Using the data from the 2022 and 2023 balance sheets, we can evaluate Pfizer’s liquidity by looking at the current assets and current liabilities. In 2023, total current assets were $43,333 million compared to current liabilities of $47,794 million, yielding a current ratio of approximately 0.91 (43,333 / 47,794), which is lower than the 2022 ratio of about 1.22 (51,259 / 42,138). This decline suggests that on a purely balance sheet basis, Pfizer’s liquidity position has weakened, since a current ratio below 1 indicates that current liabilities exceed current assets. \n\nIt is important to note some underlying changes: Cash and cash equivalents have increased significantly in 2023 ($2,853 million versus $416 million in 2022), which is a positive liquidity signal; however, this improvement is offset by a substantial reduction in short-term investments (from $22,316 million in 2022 to $9,837 million in 2023) and an overall decrease in current assets. Additionally, the rise in current liabilities—due to various factors including increased short-term borrowings and other current obligations—adds further pressure. \n\nOverall, while the increase in cash provides a cushion, the lower overall current ratio indicates that on a balance sheet basis Pfizer has less liquidity than in the prior year, which could affect its ability to meet short-term obligations if all liabilities came due at once. However, it’s also common for companies to manage liquidity through additional sources (like available credit facilities) which are not reflected in these summary numbers. Thus, while Pfizer’s liquidity metrics point to a tighter short-term financial position, further analysis (including cash flow trends and off-balance sheet arrangements) would be needed for a comprehensive assessment of its ability to meet short-term liabilities.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 15,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 1938.45,
+      "error": "",
+      "token_f1": 0.02,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context' instead of providing the required balance-sheet liquidity assessment present in GOLD."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "4f87bbef",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "table",
+      "domain_nodes": 20,
+      "domain_rels": 17,
+      "ctx_chars": 3203,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Liquidity analysis for PFE regarding short-term obligations.",
+      "expected_answer": "Using the data from the 2022 and 2023 balance sheets, we can evaluate Pfizer’s liquidity by looking at the current assets and current liabilities. In 2023, total current assets were $43,333 million compared to current liabilities of $47,794 million, yielding a current ratio of approximately 0.91 (43,333 / 47,794), which is lower than the 2022 ratio of about 1.22 (51,259 / 42,138). This decline suggests that on a purely balance sheet basis, Pfizer’s liquidity position has weakened, since a current ratio below 1 indicates that current liabilities exceed current assets. \n\nIt is important to note some underlying changes: Cash and cash equivalents have increased significantly in 2023 ($2,853 million versus $416 million in 2022), which is a positive liquidity signal; however, this improvement is offset by a substantial reduction in short-term investments (from $22,316 million in 2022 to $9,837 million in 2023) and an overall decrease in current assets. Additionally, the rise in current liabilities—due to various factors including increased short-term borrowings and other current obligations—adds further pressure. \n\nOverall, while the increase in cash provides a cushion, the lower overall current ratio indicates that on a balance sheet basis Pfizer has less liquidity than in the prior year, which could affect its ability to meet short-term obligations if all liabilities came due at once. However, it’s also common for companies to manage liquidity through additional sources (like available credit facilities) which are not reflected in these summary numbers. Thus, while Pfizer’s liquidity metrics point to a tighter short-term financial position, further analysis (including cash flow trends and off-balance sheet arrangements) would be needed for a comprehensive assessment of its ability to meet short-term liabilities.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 15,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2331.59,
+      "error": "",
+      "token_f1": 0.02,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context' while GOLD contains the full analysis; per rules this is incorrect."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "92a58726",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "current",
+      "domain_nodes": 15,
+      "domain_rels": 8,
+      "ctx_chars": 2182,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Trend of IP's current ratio liquidity for 2022-2023.",
+      "expected_answer": "Based on the provided financial data, the liquidity of International Paper Company has improved, as evidenced by an enhanced current ratio. In 2022, the company had total current assets of $6,770 million and current liabilities of $5,000 million, which yields a current ratio of approximately 1.35 (6,770/5,000). In 2023, even though total current assets slightly declined to $6,608 million, current liabilities decreased significantly to $3,959 million. This results in a current ratio of about 1.67 (6,608/3,959). Moreover, the notable increase in cash and temporary investments from $804 million to $1,113 million further strengthens the liquidity position because these liquid resources can be readily deployed to meet short-term obligations. Thus, the improved ratio combined with a stronger cash position indicates that the company is better positioned to cover its short-term liabilities in 2023 compared to 2022.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 15,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2619.86,
+      "error": "",
+      "token_f1": 0.0387,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate states 'not in the provided context' (explicitly listed as incorrect) while GOLD contains the full trend analysis and figures."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "92a58726",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "cypher",
+      "domain_nodes": 15,
+      "domain_rels": 8,
+      "ctx_chars": 2172,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Trend of IP's current ratio liquidity for 2022-2023.",
+      "expected_answer": "Based on the provided financial data, the liquidity of International Paper Company has improved, as evidenced by an enhanced current ratio. In 2022, the company had total current assets of $6,770 million and current liabilities of $5,000 million, which yields a current ratio of approximately 1.35 (6,770/5,000). In 2023, even though total current assets slightly declined to $6,608 million, current liabilities decreased significantly to $3,959 million. This results in a current ratio of about 1.67 (6,608/3,959). Moreover, the notable increase in cash and temporary investments from $804 million to $1,113 million further strengthens the liquidity position because these liquid resources can be readily deployed to meet short-term obligations. Thus, the improved ratio combined with a stronger cash position indicates that the company is better positioned to cover its short-term liabilities in 2023 compared to 2022.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 15,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2607.92,
+      "error": "",
+      "token_f1": 0.0387,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context', which rules classify as incorrect vs GOLD's explicit 2022-2023 ratio improvement from 1.35 to 1.67."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "92a58726",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "nl",
+      "domain_nodes": 15,
+      "domain_rels": 8,
+      "ctx_chars": 1976,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Trend of IP's current ratio liquidity for 2022-2023.",
+      "expected_answer": "Based on the provided financial data, the liquidity of International Paper Company has improved, as evidenced by an enhanced current ratio. In 2022, the company had total current assets of $6,770 million and current liabilities of $5,000 million, which yields a current ratio of approximately 1.35 (6,770/5,000). In 2023, even though total current assets slightly declined to $6,608 million, current liabilities decreased significantly to $3,959 million. This results in a current ratio of about 1.67 (6,608/3,959). Moreover, the notable increase in cash and temporary investments from $804 million to $1,113 million further strengthens the liquidity position because these liquid resources can be readily deployed to meet short-term obligations. Thus, the improved ratio combined with a stronger cash position indicates that the company is better positioned to cover its short-term liabilities in 2023 compared to 2022.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 15,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2771.38,
+      "error": "",
+      "token_f1": 0.0387,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' while GOLD contains the full trend analysis and figures; this is explicitly INCORRECT per rules."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "92a58726",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "table",
+      "domain_nodes": 15,
+      "domain_rels": 8,
+      "ctx_chars": 1920,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Trend of IP's current ratio liquidity for 2022-2023.",
+      "expected_answer": "Based on the provided financial data, the liquidity of International Paper Company has improved, as evidenced by an enhanced current ratio. In 2022, the company had total current assets of $6,770 million and current liabilities of $5,000 million, which yields a current ratio of approximately 1.35 (6,770/5,000). In 2023, even though total current assets slightly declined to $6,608 million, current liabilities decreased significantly to $3,959 million. This results in a current ratio of about 1.67 (6,608/3,959). Moreover, the notable increase in cash and temporary investments from $804 million to $1,113 million further strengthens the liquidity position because these liquid resources can be readily deployed to meet short-term obligations. Thus, the improved ratio combined with a stronger cash position indicates that the company is better positioned to cover its short-term liabilities in 2023 compared to 2022.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 15,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3251.64,
+      "error": "",
+      "token_f1": 0.0387,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context', which rules classify as incorrect vs. GOLD's detailed trend and figures."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "dc4dc72e",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "current",
+      "domain_nodes": 11,
+      "domain_rels": 10,
+      "ctx_chars": 2288,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Deferred rev trends at ENPH impact on rev visibility & contract struct for 2022-23, ENPH.",
+      "expected_answer": "The increase in both current and non‐current deferred revenues from 2022 to 2023 suggests that Enphase Energy has been successful in securing more customer contracts where revenue is received in advance, implying future delivery of products or services. Deferred revenues represent funds collected in advance for work or services to be delivered in future periods. The increase indicates two key points: firstly, there is enhanced future revenue visibility as a larger portion of sales is linked to contracts that will be fulfilled over time; secondly, it reveals that Enphase is likely engaging in longer-term customer contract arrangements, which may include maintenance services, warranties, or subscription-based offerings. This trend contributes to a more predictable revenue stream going forward as the deferred amounts are recognized over the contract term.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 2,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2568.42,
+      "error": "",
+      "token_f1": 0.0296,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' and therefore supplies none of the ground-truth facts on deferred-revenue trends, visibility, or contract structure."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "dc4dc72e",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "cypher",
+      "domain_nodes": 11,
+      "domain_rels": 10,
+      "ctx_chars": 2280,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Deferred rev trends at ENPH impact on rev visibility & contract struct for 2022-23, ENPH.",
+      "expected_answer": "The increase in both current and non‐current deferred revenues from 2022 to 2023 suggests that Enphase Energy has been successful in securing more customer contracts where revenue is received in advance, implying future delivery of products or services. Deferred revenues represent funds collected in advance for work or services to be delivered in future periods. The increase indicates two key points: firstly, there is enhanced future revenue visibility as a larger portion of sales is linked to contracts that will be fulfilled over time; secondly, it reveals that Enphase is likely engaging in longer-term customer contract arrangements, which may include maintenance services, warranties, or subscription-based offerings. This trend contributes to a more predictable revenue stream going forward as the deferred amounts are recognized over the contract term.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 2,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3490.73,
+      "error": "",
+      "token_f1": 0.0296,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' while GOLD provides a substantive explanation of deferred-revenue trends; per rules this is scored incorrect."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "dc4dc72e",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "nl",
+      "domain_nodes": 11,
+      "domain_rels": 10,
+      "ctx_chars": 2086,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Deferred rev trends at ENPH impact on rev visibility & contract struct for 2022-23, ENPH.",
+      "expected_answer": "The increase in both current and non‐current deferred revenues from 2022 to 2023 suggests that Enphase Energy has been successful in securing more customer contracts where revenue is received in advance, implying future delivery of products or services. Deferred revenues represent funds collected in advance for work or services to be delivered in future periods. The increase indicates two key points: firstly, there is enhanced future revenue visibility as a larger portion of sales is linked to contracts that will be fulfilled over time; secondly, it reveals that Enphase is likely engaging in longer-term customer contract arrangements, which may include maintenance services, warranties, or subscription-based offerings. This trend contributes to a more predictable revenue stream going forward as the deferred amounts are recognized over the contract term.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 2,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2158.22,
+      "error": "",
+      "token_f1": 0.0296,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' instead of addressing the deferred-revenue trend and its implications on visibility/contract structure that GOLD describes."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "dc4dc72e",
+      "slice": "S2_FIN_NONQUANT_MULTI",
+      "n_refs": 2,
+      "format": "table",
+      "domain_nodes": 11,
+      "domain_rels": 10,
+      "ctx_chars": 2224,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Deferred rev trends at ENPH impact on rev visibility & contract struct for 2022-23, ENPH.",
+      "expected_answer": "The increase in both current and non‐current deferred revenues from 2022 to 2023 suggests that Enphase Energy has been successful in securing more customer contracts where revenue is received in advance, implying future delivery of products or services. Deferred revenues represent funds collected in advance for work or services to be delivered in future periods. The increase indicates two key points: firstly, there is enhanced future revenue visibility as a larger portion of sales is linked to contracts that will be fulfilled over time; secondly, it reveals that Enphase is likely engaging in longer-term customer contract arrangements, which may include maintenance services, warranties, or subscription-based offerings. This trend contributes to a more predictable revenue stream going forward as the deferred amounts are recognized over the contract term.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 2,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2514.67,
+      "error": "",
+      "token_f1": 0.0296,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in context' while GOLD provides a complete factual explanation of deferred revenue trends and impacts."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "07a20cbe",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "current",
+      "domain_nodes": 10,
+      "domain_rels": 0,
+      "ctx_chars": 664,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Labcorp fin metrics, op eff, tech int, drug dev svc, LH.",
+      "expected_answer": "Based on the information provided, we can infer the kinds of financial indicators that would demonstrate Labcorp’s (including its BLS segment) ability to leverage its operational strengths amid competitive dynamics. Although the references do not provide specific numerical figures, they do highlight qualitative factors – integrated logistics, technology leadership, large‐scale automated testing and cost efficiencies – that translate into measurable financial performance. In practice, investors and analysts would look at a combination of the following indicators:\n\n1. Revenue and Revenue Growth: An upward trend in revenue (or revenue segments related to drug development services) over time can show that Labcorp is winning market share despite intense competition. Sustained revenue growth would suggest that its operational efficiencies and technological innovations are paying off.\n\n2. Operating Margin and EBITDA Margin: Higher or improving margins would indicate that the company’s investments in technological advancements and integrated service networks are translating into cost savings and higher profitability even in a competitive market. The margins would reflect the ability to reduce costs while increasing service volumes.\n\n3. Return on Invested Capital (ROIC): ROIC helps assess how efficiently Labcorp's capital investments – whether in technology, automation, or logistics – are generating returns relative to competing providers in the drug development services space.\n\n4. Free Cash Flow (FCF): A strong FCF profile, especially compared to peers, would suggest that the company’s efficiency improvements allow it to generate cash that can be reinvested in growth or returned to shareholders. This reflects both operational effectiveness and prudent capital allocation.\n\n5. R&D Efficiency (where applicable): Given the highly technical nature of drug development services, ratios such as R&D expense as a percentage of revenue (and improvements therein) can also be indicative. Efficient R&D spending that leads to innovations and new service offerings may enable Labcorp to maintain a competitive edge.\n\nEach of these indicators supports an assessment of both growth and profitability under competitive pressures. In a detailed financial analysis, one would compare these metrics to historical trends and to industry benchmarks to conclusively determine how well Labcorp is exploiting its operational and technological advantages despite a competitive and consolidating market.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 5,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 4978.28,
+      "error": "",
+      "token_f1": 0.0222,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context', which the rules explicitly classify as INCORRECT regardless of GOLD content."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "07a20cbe",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "cypher",
+      "domain_nodes": 10,
+      "domain_rels": 0,
+      "ctx_chars": 583,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Labcorp fin metrics, op eff, tech int, drug dev svc, LH.",
+      "expected_answer": "Based on the information provided, we can infer the kinds of financial indicators that would demonstrate Labcorp’s (including its BLS segment) ability to leverage its operational strengths amid competitive dynamics. Although the references do not provide specific numerical figures, they do highlight qualitative factors – integrated logistics, technology leadership, large‐scale automated testing and cost efficiencies – that translate into measurable financial performance. In practice, investors and analysts would look at a combination of the following indicators:\n\n1. Revenue and Revenue Growth: An upward trend in revenue (or revenue segments related to drug development services) over time can show that Labcorp is winning market share despite intense competition. Sustained revenue growth would suggest that its operational efficiencies and technological innovations are paying off.\n\n2. Operating Margin and EBITDA Margin: Higher or improving margins would indicate that the company’s investments in technological advancements and integrated service networks are translating into cost savings and higher profitability even in a competitive market. The margins would reflect the ability to reduce costs while increasing service volumes.\n\n3. Return on Invested Capital (ROIC): ROIC helps assess how efficiently Labcorp's capital investments – whether in technology, automation, or logistics – are generating returns relative to competing providers in the drug development services space.\n\n4. Free Cash Flow (FCF): A strong FCF profile, especially compared to peers, would suggest that the company’s efficiency improvements allow it to generate cash that can be reinvested in growth or returned to shareholders. This reflects both operational effectiveness and prudent capital allocation.\n\n5. R&D Efficiency (where applicable): Given the highly technical nature of drug development services, ratios such as R&D expense as a percentage of revenue (and improvements therein) can also be indicative. Efficient R&D spending that leads to innovations and new service offerings may enable Labcorp to maintain a competitive edge.\n\nEach of these indicators supports an assessment of both growth and profitability under competitive pressures. In a detailed financial analysis, one would compare these metrics to historical trends and to industry benchmarks to conclusively determine how well Labcorp is exploiting its operational and technological advantages despite a competitive and consolidating market.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 5,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 4683.2,
+      "error": "",
+      "token_f1": 0.0222,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in context' while GOLD provides a full list of indicators; rule explicitly marks such refusals incorrect."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "07a20cbe",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "nl",
+      "domain_nodes": 10,
+      "domain_rels": 0,
+      "ctx_chars": 470,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Labcorp fin metrics, op eff, tech int, drug dev svc, LH.",
+      "expected_answer": "Based on the information provided, we can infer the kinds of financial indicators that would demonstrate Labcorp’s (including its BLS segment) ability to leverage its operational strengths amid competitive dynamics. Although the references do not provide specific numerical figures, they do highlight qualitative factors – integrated logistics, technology leadership, large‐scale automated testing and cost efficiencies – that translate into measurable financial performance. In practice, investors and analysts would look at a combination of the following indicators:\n\n1. Revenue and Revenue Growth: An upward trend in revenue (or revenue segments related to drug development services) over time can show that Labcorp is winning market share despite intense competition. Sustained revenue growth would suggest that its operational efficiencies and technological innovations are paying off.\n\n2. Operating Margin and EBITDA Margin: Higher or improving margins would indicate that the company’s investments in technological advancements and integrated service networks are translating into cost savings and higher profitability even in a competitive market. The margins would reflect the ability to reduce costs while increasing service volumes.\n\n3. Return on Invested Capital (ROIC): ROIC helps assess how efficiently Labcorp's capital investments – whether in technology, automation, or logistics – are generating returns relative to competing providers in the drug development services space.\n\n4. Free Cash Flow (FCF): A strong FCF profile, especially compared to peers, would suggest that the company’s efficiency improvements allow it to generate cash that can be reinvested in growth or returned to shareholders. This reflects both operational effectiveness and prudent capital allocation.\n\n5. R&D Efficiency (where applicable): Given the highly technical nature of drug development services, ratios such as R&D expense as a percentage of revenue (and improvements therein) can also be indicative. Efficient R&D spending that leads to innovations and new service offerings may enable Labcorp to maintain a competitive edge.\n\nEach of these indicators supports an assessment of both growth and profitability under competitive pressures. In a detailed financial analysis, one would compare these metrics to historical trends and to industry benchmarks to conclusively determine how well Labcorp is exploiting its operational and technological advantages despite a competitive and consolidating market.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 5,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3559.28,
+      "error": "",
+      "token_f1": 0.0222,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context', which the rules explicitly classify as INCORRECT; GOLD provides a substantive (qualitative) answer on the requested metrics."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "07a20cbe",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "table",
+      "domain_nodes": 10,
+      "domain_rels": 0,
+      "ctx_chars": 722,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Labcorp fin metrics, op eff, tech int, drug dev svc, LH.",
+      "expected_answer": "Based on the information provided, we can infer the kinds of financial indicators that would demonstrate Labcorp’s (including its BLS segment) ability to leverage its operational strengths amid competitive dynamics. Although the references do not provide specific numerical figures, they do highlight qualitative factors – integrated logistics, technology leadership, large‐scale automated testing and cost efficiencies – that translate into measurable financial performance. In practice, investors and analysts would look at a combination of the following indicators:\n\n1. Revenue and Revenue Growth: An upward trend in revenue (or revenue segments related to drug development services) over time can show that Labcorp is winning market share despite intense competition. Sustained revenue growth would suggest that its operational efficiencies and technological innovations are paying off.\n\n2. Operating Margin and EBITDA Margin: Higher or improving margins would indicate that the company’s investments in technological advancements and integrated service networks are translating into cost savings and higher profitability even in a competitive market. The margins would reflect the ability to reduce costs while increasing service volumes.\n\n3. Return on Invested Capital (ROIC): ROIC helps assess how efficiently Labcorp's capital investments – whether in technology, automation, or logistics – are generating returns relative to competing providers in the drug development services space.\n\n4. Free Cash Flow (FCF): A strong FCF profile, especially compared to peers, would suggest that the company’s efficiency improvements allow it to generate cash that can be reinvested in growth or returned to shareholders. This reflects both operational effectiveness and prudent capital allocation.\n\n5. R&D Efficiency (where applicable): Given the highly technical nature of drug development services, ratios such as R&D expense as a percentage of revenue (and improvements therein) can also be indicative. Efficient R&D spending that leads to innovations and new service offerings may enable Labcorp to maintain a competitive edge.\n\nEach of these indicators supports an assessment of both growth and profitability under competitive pressures. In a detailed financial analysis, one would compare these metrics to historical trends and to industry benchmarks to conclusively determine how well Labcorp is exploiting its operational and technological advantages despite a competitive and consolidating market.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 5,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3070.83,
+      "error": "",
+      "token_f1": 0.0222,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in context' while GOLD provides a full qualitative list of metrics; rule classifies such refusals as incorrect."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "38e0b21f",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 4,
+      "format": "current",
+      "domain_nodes": 73,
+      "domain_rels": 0,
+      "ctx_chars": 4123,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "High-growth end-use % for Eastman revenue and peer positioning, ticker at the end.",
+      "expected_answer": "The provided data consists of product descriptions, key raw materials, and end-use applications across various companies, but it does not include Eastman Chemical Company's financial statements or specific revenue breakdowns by end-use applications. Without detailed segment revenue data showing what percentage of Eastman's revenue comes from areas such as transportation, building and construction, or health and wellness, it is not possible to accurately determine the percentage attributable to high-growth end-use applications or assess how this mix compares against its peers. Additional financial disclosures or revenue segmentation data would be required to answer this question.",
+      "answer": "not in the provided context \n\nEMN",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 0,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 7968.93,
+      "error": "",
+      "token_f1": 0.0566,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "correct",
+          "score": 1.0,
+          "rationale": "CANDIDATE matches GOLD conclusion that revenue breakdown data is absent from context; ticker addition fulfills query instruction without contradiction."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 1.0,
+      "panel_verdict": "correct",
+      "judge_disagreement": false,
+      "judge_score": 1.0,
+      "judge_verdict": "correct"
+    },
+    {
+      "case_id": "38e0b21f",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 4,
+      "format": "cypher",
+      "domain_nodes": 73,
+      "domain_rels": 0,
+      "ctx_chars": 3406,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "High-growth end-use % for Eastman revenue and peer positioning, ticker at the end.",
+      "expected_answer": "The provided data consists of product descriptions, key raw materials, and end-use applications across various companies, but it does not include Eastman Chemical Company's financial statements or specific revenue breakdowns by end-use applications. Without detailed segment revenue data showing what percentage of Eastman's revenue comes from areas such as transportation, building and construction, or health and wellness, it is not possible to accurately determine the percentage attributable to high-growth end-use applications or assess how this mix compares against its peers. Additional financial disclosures or revenue segmentation data would be required to answer this question.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 0,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2105.19,
+      "error": "",
+      "token_f1": 0.0571,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE states 'not in the provided context' which the rules explicitly classify as INCORRECT even though GOLD reaches a similar no-data conclusion."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "38e0b21f",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 4,
+      "format": "nl",
+      "domain_nodes": 73,
+      "domain_rels": 0,
+      "ctx_chars": 2858,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "High-growth end-use % for Eastman revenue and peer positioning, ticker at the end.",
+      "expected_answer": "The provided data consists of product descriptions, key raw materials, and end-use applications across various companies, but it does not include Eastman Chemical Company's financial statements or specific revenue breakdowns by end-use applications. Without detailed segment revenue data showing what percentage of Eastman's revenue comes from areas such as transportation, building and construction, or health and wellness, it is not possible to accurately determine the percentage attributable to high-growth end-use applications or assess how this mix compares against its peers. Additional financial disclosures or revenue segmentation data would be required to answer this question.",
+      "answer": "not in the provided context \n\nEMN",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 0,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3365.63,
+      "error": "",
+      "token_f1": 0.0566,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "correct",
+          "score": 1.0,
+          "rationale": "CANDIDATE directly matches GOLD conclusion that required revenue breakdown data is absent from context; ticker addition fulfills query instruction without contradiction."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 1.0,
+      "panel_verdict": "correct",
+      "judge_disagreement": false,
+      "judge_score": 1.0,
+      "judge_verdict": "correct"
+    },
+    {
+      "case_id": "38e0b21f",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 4,
+      "format": "table",
+      "domain_nodes": 73,
+      "domain_rels": 0,
+      "ctx_chars": 4201,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "High-growth end-use % for Eastman revenue and peer positioning, ticker at the end.",
+      "expected_answer": "The provided data consists of product descriptions, key raw materials, and end-use applications across various companies, but it does not include Eastman Chemical Company's financial statements or specific revenue breakdowns by end-use applications. Without detailed segment revenue data showing what percentage of Eastman's revenue comes from areas such as transportation, building and construction, or health and wellness, it is not possible to accurately determine the percentage attributable to high-growth end-use applications or assess how this mix compares against its peers. Additional financial disclosures or revenue segmentation data would be required to answer this question.",
+      "answer": "not in the provided context \n\nEMN",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 0,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2587.33,
+      "error": "",
+      "token_f1": 0.0566,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "correct",
+          "score": 1.0,
+          "rationale": "CANDIDATE matches GOLD conclusion that required revenue breakdown data is absent from context; ticker addition fulfills query request without contradiction."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 1.0,
+      "panel_verdict": "correct",
+      "judge_disagreement": false,
+      "judge_score": 1.0,
+      "judge_verdict": "correct"
+    },
+    {
+      "case_id": "9a55a405",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "current",
+      "domain_nodes": 18,
+      "domain_rels": 0,
+      "ctx_chars": 1154,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "STX's revenue, supply chain, & operating perf. can be significantly influenced by lead-time extensions & long-term demand forecasts.",
+      "expected_answer": "The changes described have a multifaceted impact on the business. First, revenue stability improves because requiring longer-term demand forecasts with cancellation penalties means that customers are more committed, reducing the uncertainty associated with order deferments and cancellations. This commitment helps in smoothing out revenue fluctuations over time despite extended production lead-times. \n\nOn the supply chain management side, the longer production lead-times necessitate more advanced planning and inventory management. By obtaining longer-term demand forecasts, Seagate can better align production schedules with committed future demand. This in turn reduces the risk of mismatches between supply and demand, mitigates inventory shortages or overstock issues, and improves overall supply chain predictability. \n\nRegarding overall operating performance, the combination of extended lead-times and the financial discipline imposed through cancellation penalties encourages a more stable production environment. This stability allows for better capacity utilization, more efficient capital allocation in production and inventory, and reduced volatility in manufacturing operations. In essence, while extended lead-times can pose operational challenges, the tighter commitment from customers and the improved forecasting process ultimately lead to a more robust and efficient operating model.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 0,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 4349.67,
+      "error": "",
+      "token_f1": 0.0209,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' instead of providing the ground-truth analysis of positive effects on revenue, supply chain, and operations."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "9a55a405",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "cypher",
+      "domain_nodes": 18,
+      "domain_rels": 0,
+      "ctx_chars": 987,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "STX's revenue, supply chain, & operating perf. can be significantly influenced by lead-time extensions & long-term demand forecasts.",
+      "expected_answer": "The changes described have a multifaceted impact on the business. First, revenue stability improves because requiring longer-term demand forecasts with cancellation penalties means that customers are more committed, reducing the uncertainty associated with order deferments and cancellations. This commitment helps in smoothing out revenue fluctuations over time despite extended production lead-times. \n\nOn the supply chain management side, the longer production lead-times necessitate more advanced planning and inventory management. By obtaining longer-term demand forecasts, Seagate can better align production schedules with committed future demand. This in turn reduces the risk of mismatches between supply and demand, mitigates inventory shortages or overstock issues, and improves overall supply chain predictability. \n\nRegarding overall operating performance, the combination of extended lead-times and the financial discipline imposed through cancellation penalties encourages a more stable production environment. This stability allows for better capacity utilization, more efficient capital allocation in production and inventory, and reduced volatility in manufacturing operations. In essence, while extended lead-times can pose operational challenges, the tighter commitment from customers and the improved forecasting process ultimately lead to a more robust and efficient operating model.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 0,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3326.53,
+      "error": "",
+      "token_f1": 0.0209,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in context' while GOLD provides a full factual explanation of impacts; this is explicitly incorrect per rules."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "9a55a405",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "nl",
+      "domain_nodes": 18,
+      "domain_rels": 0,
+      "ctx_chars": 824,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "STX's revenue, supply chain, & operating perf. can be significantly influenced by lead-time extensions & long-term demand forecasts.",
+      "expected_answer": "The changes described have a multifaceted impact on the business. First, revenue stability improves because requiring longer-term demand forecasts with cancellation penalties means that customers are more committed, reducing the uncertainty associated with order deferments and cancellations. This commitment helps in smoothing out revenue fluctuations over time despite extended production lead-times. \n\nOn the supply chain management side, the longer production lead-times necessitate more advanced planning and inventory management. By obtaining longer-term demand forecasts, Seagate can better align production schedules with committed future demand. This in turn reduces the risk of mismatches between supply and demand, mitigates inventory shortages or overstock issues, and improves overall supply chain predictability. \n\nRegarding overall operating performance, the combination of extended lead-times and the financial discipline imposed through cancellation penalties encourages a more stable production environment. This stability allows for better capacity utilization, more efficient capital allocation in production and inventory, and reduced volatility in manufacturing operations. In essence, while extended lead-times can pose operational challenges, the tighter commitment from customers and the improved forecasting process ultimately lead to a more robust and efficient operating model.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 0,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 5255.18,
+      "error": "",
+      "token_f1": 0.0209,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in context' while GOLD provides a full detailed explanation of impacts; rules explicitly classify such responses as incorrect."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "9a55a405",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "table",
+      "domain_nodes": 18,
+      "domain_rels": 0,
+      "ctx_chars": 1232,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "STX's revenue, supply chain, & operating perf. can be significantly influenced by lead-time extensions & long-term demand forecasts.",
+      "expected_answer": "The changes described have a multifaceted impact on the business. First, revenue stability improves because requiring longer-term demand forecasts with cancellation penalties means that customers are more committed, reducing the uncertainty associated with order deferments and cancellations. This commitment helps in smoothing out revenue fluctuations over time despite extended production lead-times. \n\nOn the supply chain management side, the longer production lead-times necessitate more advanced planning and inventory management. By obtaining longer-term demand forecasts, Seagate can better align production schedules with committed future demand. This in turn reduces the risk of mismatches between supply and demand, mitigates inventory shortages or overstock issues, and improves overall supply chain predictability. \n\nRegarding overall operating performance, the combination of extended lead-times and the financial discipline imposed through cancellation penalties encourages a more stable production environment. This stability allows for better capacity utilization, more efficient capital allocation in production and inventory, and reduced volatility in manufacturing operations. In essence, while extended lead-times can pose operational challenges, the tighter commitment from customers and the improved forecasting process ultimately lead to a more robust and efficient operating model.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 0,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2142.99,
+      "error": "",
+      "token_f1": 0.0209,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in context' while GOLD provides a full factual explanation of impacts; this is explicitly incorrect per rules."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "c4c47e11",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "current",
+      "domain_nodes": 19,
+      "domain_rels": 0,
+      "ctx_chars": 1304,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Primary mkt role of POOL via a 3-pronged strategy, ticker at the end.",
+      "expected_answer": "Pool Corporation’s three-pronged strategy clearly defines its role in the primary market as a proactive, integrated value creator that goes beyond merely distributing products. First, by promoting industry growth through advertising, educational initiatives, and digital marketing platforms (including websites and mobile apps), they work to raise consumer awareness and broaden the market for pool ownership—as well as encourage innovation like energy‐efficient products and environmentally friendly solutions. Second, by fostering customer business growth through comprehensive support programs such as product training, tailored marketing tools, and hands‐on guidance in sales center operations and effective merchandising, they position themselves as a critical partner to their primarily small, family‐owned customer base. This supportive approach helps these customers expand their product offerings, improve service delivery, and ultimately generate increased sales. Finally, by continuously improving operational efficiency through strategic investments in digital transformation (evident in platforms like Pool360 WaterTest and Pool360 PoolService) and technological enhancements (like mobile order processing and velocity slotting), Pool Corporation streamlines its internal operations. This boosts order processing speeds, enhances customer service, and maintains effective inventory and distribution management. Overall, their strategy defines the company as not only a distributor of a wide range of pool-related products but also as a facilitator of growth and efficiency in the industry and an essential partner committed to enhancing the success of its customers.",
+      "answer": "not in the provided context \n\n**Final Answer**\n\nnot in the provided context (POOL)",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 1,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 6637.04,
+      "error": "",
+      "token_f1": 0.0502,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' while GOLD provides the full 3-pronged strategy details; refusal = incorrect per rules."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "c4c47e11",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "cypher",
+      "domain_nodes": 19,
+      "domain_rels": 0,
+      "ctx_chars": 1127,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Primary mkt role of POOL via a 3-pronged strategy, ticker at the end.",
+      "expected_answer": "Pool Corporation’s three-pronged strategy clearly defines its role in the primary market as a proactive, integrated value creator that goes beyond merely distributing products. First, by promoting industry growth through advertising, educational initiatives, and digital marketing platforms (including websites and mobile apps), they work to raise consumer awareness and broaden the market for pool ownership—as well as encourage innovation like energy‐efficient products and environmentally friendly solutions. Second, by fostering customer business growth through comprehensive support programs such as product training, tailored marketing tools, and hands‐on guidance in sales center operations and effective merchandising, they position themselves as a critical partner to their primarily small, family‐owned customer base. This supportive approach helps these customers expand their product offerings, improve service delivery, and ultimately generate increased sales. Finally, by continuously improving operational efficiency through strategic investments in digital transformation (evident in platforms like Pool360 WaterTest and Pool360 PoolService) and technological enhancements (like mobile order processing and velocity slotting), Pool Corporation streamlines its internal operations. This boosts order processing speeds, enhances customer service, and maintains effective inventory and distribution management. Overall, their strategy defines the company as not only a distributor of a wide range of pool-related products but also as a facilitator of growth and efficiency in the industry and an essential partner committed to enhancing the success of its customers.",
+      "answer": "not in the provided context POOL",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 1,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 6503.1,
+      "error": "",
+      "token_f1": 0.0345,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' instead of providing the gold's three-pronged strategy for POOL; this is explicitly defined as incorrect per rules."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "c4c47e11",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "nl",
+      "domain_nodes": 19,
+      "domain_rels": 0,
+      "ctx_chars": 957,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Primary mkt role of POOL via a 3-pronged strategy, ticker at the end.",
+      "expected_answer": "Pool Corporation’s three-pronged strategy clearly defines its role in the primary market as a proactive, integrated value creator that goes beyond merely distributing products. First, by promoting industry growth through advertising, educational initiatives, and digital marketing platforms (including websites and mobile apps), they work to raise consumer awareness and broaden the market for pool ownership—as well as encourage innovation like energy‐efficient products and environmentally friendly solutions. Second, by fostering customer business growth through comprehensive support programs such as product training, tailored marketing tools, and hands‐on guidance in sales center operations and effective merchandising, they position themselves as a critical partner to their primarily small, family‐owned customer base. This supportive approach helps these customers expand their product offerings, improve service delivery, and ultimately generate increased sales. Finally, by continuously improving operational efficiency through strategic investments in digital transformation (evident in platforms like Pool360 WaterTest and Pool360 PoolService) and technological enhancements (like mobile order processing and velocity slotting), Pool Corporation streamlines its internal operations. This boosts order processing speeds, enhances customer service, and maintains effective inventory and distribution management. Overall, their strategy defines the company as not only a distributor of a wide range of pool-related products but also as a facilitator of growth and efficiency in the industry and an essential partner committed to enhancing the success of its customers.",
+      "answer": "not in the provided context POOL",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 1,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3175.38,
+      "error": "",
+      "token_f1": 0.0345,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' (explicitly marked incorrect per rules) instead of providing the GOLD's three-pronged strategy content."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "c4c47e11",
+      "slice": "S4_CO_MULTI_NONQUANT",
+      "n_refs": 2,
+      "format": "table",
+      "domain_nodes": 19,
+      "domain_rels": 0,
+      "ctx_chars": 1382,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Primary mkt role of POOL via a 3-pronged strategy, ticker at the end.",
+      "expected_answer": "Pool Corporation’s three-pronged strategy clearly defines its role in the primary market as a proactive, integrated value creator that goes beyond merely distributing products. First, by promoting industry growth through advertising, educational initiatives, and digital marketing platforms (including websites and mobile apps), they work to raise consumer awareness and broaden the market for pool ownership—as well as encourage innovation like energy‐efficient products and environmentally friendly solutions. Second, by fostering customer business growth through comprehensive support programs such as product training, tailored marketing tools, and hands‐on guidance in sales center operations and effective merchandising, they position themselves as a critical partner to their primarily small, family‐owned customer base. This supportive approach helps these customers expand their product offerings, improve service delivery, and ultimately generate increased sales. Finally, by continuously improving operational efficiency through strategic investments in digital transformation (evident in platforms like Pool360 WaterTest and Pool360 PoolService) and technological enhancements (like mobile order processing and velocity slotting), Pool Corporation streamlines its internal operations. This boosts order processing speeds, enhances customer service, and maintains effective inventory and distribution management. Overall, their strategy defines the company as not only a distributor of a wide range of pool-related products but also as a facilitator of growth and efficiency in the industry and an essential partner committed to enhancing the success of its customers.",
+      "answer": "not in the provided context POOL",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 1,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 4597.26,
+      "error": "",
+      "token_f1": 0.0345,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' (explicitly listed as incorrect per rules) instead of providing the gold's 3-pronged strategy for POOL."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "05095fe2",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 2,
+      "format": "current",
+      "domain_nodes": 17,
+      "domain_rels": 14,
+      "ctx_chars": 2473,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "NDSN liquidity evolution 2024: cash on hand, ops cash, credit facility borrowings.",
+      "expected_answer": "The data provided allows us to assess how the liquidity position evolved over 2024. First, while the cash on hand increased only marginally from $115,679 as of October 31, 2023, to $115,952 as of October 31, 2024 (an increase of just $273), the operating cash flow which is a key indicator of the company’s ability to generate cash was robust at $556,193 in 2024 (although it showed a decrease of approximately $85,089 from $641,282 in 2023). Despite this decline, the operating cash flows remain strong enough to support ongoing liquidity needs. In addition to the cash generated from operations, the company maintained significant access to funds through its credit facilities. As of October 31, 2024, the total available borrowings (combining the loan agreements and unused bank lines of credit) stood at $785,880. This, coupled with the healthy operating cash flows, supports the company’s ability to meet working capital requirements, capital expenditures, and other obligations such as debt service and pension liabilities. Overall, the company’s liquidity position in 2024 remained sound—with a slight increase in cash on hand, strong (albeit lower than the previous year) cash generated from operations, and robust access to external funding—which indicates that it is well-positioned to cover both current and near-term financial obligations and to invest in growth initiatives as opportunities arise.",
+      "answer": "**NDSN liquidity (2024, per provided 10-K context):**\n\n- Cash on hand: $115,952 (Oct 31 2024)  \n- Ops cash: $556,193 (2024 period) vs $641,282 (FY2023); delta = $556,193 - $641,282 = -$85,089  \n- Credit facility borrowings: Available borrowings $785,880 (Oct 31 2024); no 2023 available-borrowings figure or actual draw amounts in context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 6,
+        "expected_number_count": 11,
+        "actual_number_count": 9,
+        "number_overlap_ratio": 0.5454545454545454
+      },
+      "latency_ms": 5709.91,
+      "error": "",
+      "token_f1": 0.1908,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "partial",
+          "score": 0.75,
+          "rationale": "Core 2024 figures and ops-cash delta match GOLD exactly; cash evolution (prior-year balance + $273 change) and overall liquidity narrative are omitted, making the answer incomplete but not incorrect."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.75,
+      "panel_verdict": "partial",
+      "judge_disagreement": false,
+      "judge_score": 0.75,
+      "judge_verdict": "partial"
+    },
+    {
+      "case_id": "05095fe2",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 2,
+      "format": "cypher",
+      "domain_nodes": 17,
+      "domain_rels": 14,
+      "ctx_chars": 2410,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "NDSN liquidity evolution 2024: cash on hand, ops cash, credit facility borrowings.",
+      "expected_answer": "The data provided allows us to assess how the liquidity position evolved over 2024. First, while the cash on hand increased only marginally from $115,679 as of October 31, 2023, to $115,952 as of October 31, 2024 (an increase of just $273), the operating cash flow which is a key indicator of the company’s ability to generate cash was robust at $556,193 in 2024 (although it showed a decrease of approximately $85,089 from $641,282 in 2023). Despite this decline, the operating cash flows remain strong enough to support ongoing liquidity needs. In addition to the cash generated from operations, the company maintained significant access to funds through its credit facilities. As of October 31, 2024, the total available borrowings (combining the loan agreements and unused bank lines of credit) stood at $785,880. This, coupled with the healthy operating cash flows, supports the company’s ability to meet working capital requirements, capital expenditures, and other obligations such as debt service and pension liabilities. Overall, the company’s liquidity position in 2024 remained sound—with a slight increase in cash on hand, strong (albeit lower than the previous year) cash generated from operations, and robust access to external funding—which indicates that it is well-positioned to cover both current and near-term financial obligations and to invest in growth initiatives as opportunities arise.",
+      "answer": "**NDSN liquidity (2024):**\n- Cash on hand (Oct 31 2024): $115,952\n- Cash provided by operations (2024): $556,193\n- Credit facility borrowings: not in the provided context (only available borrowings Oct 31 2024: $785,880 reported)",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 4,
+        "expected_number_count": 11,
+        "actual_number_count": 5,
+        "number_overlap_ratio": 0.36363636363636365
+      },
+      "latency_ms": 3709.88,
+      "error": "",
+      "token_f1": 0.1894,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "correct",
+          "score": 1.0,
+          "rationale": "CANDIDATE reports the exact matching figures from GOLD for cash and operating cash flow, and correctly notes that actual credit facility borrowings drawn are not provided (only available borrowings)."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 1.0,
+      "panel_verdict": "correct",
+      "judge_disagreement": false,
+      "judge_score": 1.0,
+      "judge_verdict": "correct"
+    },
+    {
+      "case_id": "05095fe2",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 2,
+      "format": "nl",
+      "domain_nodes": 17,
+      "domain_rels": 14,
+      "ctx_chars": 1910,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "NDSN liquidity evolution 2024: cash on hand, ops cash, credit facility borrowings.",
+      "expected_answer": "The data provided allows us to assess how the liquidity position evolved over 2024. First, while the cash on hand increased only marginally from $115,679 as of October 31, 2023, to $115,952 as of October 31, 2024 (an increase of just $273), the operating cash flow which is a key indicator of the company’s ability to generate cash was robust at $556,193 in 2024 (although it showed a decrease of approximately $85,089 from $641,282 in 2023). Despite this decline, the operating cash flows remain strong enough to support ongoing liquidity needs. In addition to the cash generated from operations, the company maintained significant access to funds through its credit facilities. As of October 31, 2024, the total available borrowings (combining the loan agreements and unused bank lines of credit) stood at $785,880. This, coupled with the healthy operating cash flows, supports the company’s ability to meet working capital requirements, capital expenditures, and other obligations such as debt service and pension liabilities. Overall, the company’s liquidity position in 2024 remained sound—with a slight increase in cash on hand, strong (albeit lower than the previous year) cash generated from operations, and robust access to external funding—which indicates that it is well-positioned to cover both current and near-term financial obligations and to invest in growth initiatives as opportunities arise.",
+      "answer": "**NDSN 2024 liquidity (Oct 31 2024 / FY2024):**\n\n- Cash on hand: $115,952\n- Ops cash (Cash Provided by Operations 2024): $556,193\n- Credit facility available borrowings: $785,880 (Unsecured multi-currency credit facility)\n\nAll other items (2023 cash flows, debt issuances, dividends) are outside the 2024 scope requested.",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 5,
+        "expected_number_count": 11,
+        "actual_number_count": 6,
+        "number_overlap_ratio": 0.45454545454545453
+      },
+      "latency_ms": 6020.11,
+      "error": "",
+      "token_f1": 0.2101,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "correct",
+          "score": 1.0,
+          "rationale": "CANDIDATE reports the exact three 2024 figures and period that appear in GOLD; no contradictions or fabrications."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 1.0,
+      "panel_verdict": "correct",
+      "judge_disagreement": false,
+      "judge_score": 1.0,
+      "judge_verdict": "correct"
+    },
+    {
+      "case_id": "05095fe2",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 2,
+      "format": "table",
+      "domain_nodes": 17,
+      "domain_rels": 14,
+      "ctx_chars": 2328,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "NDSN liquidity evolution 2024: cash on hand, ops cash, credit facility borrowings.",
+      "expected_answer": "The data provided allows us to assess how the liquidity position evolved over 2024. First, while the cash on hand increased only marginally from $115,679 as of October 31, 2023, to $115,952 as of October 31, 2024 (an increase of just $273), the operating cash flow which is a key indicator of the company’s ability to generate cash was robust at $556,193 in 2024 (although it showed a decrease of approximately $85,089 from $641,282 in 2023). Despite this decline, the operating cash flows remain strong enough to support ongoing liquidity needs. In addition to the cash generated from operations, the company maintained significant access to funds through its credit facilities. As of October 31, 2024, the total available borrowings (combining the loan agreements and unused bank lines of credit) stood at $785,880. This, coupled with the healthy operating cash flows, supports the company’s ability to meet working capital requirements, capital expenditures, and other obligations such as debt service and pension liabilities. Overall, the company’s liquidity position in 2024 remained sound—with a slight increase in cash on hand, strong (albeit lower than the previous year) cash generated from operations, and robust access to external funding—which indicates that it is well-positioned to cover both current and near-term financial obligations and to invest in growth initiatives as opportunities arise.",
+      "answer": "**NDSN liquidity (Oct 31 2024 vs prior):**\n\n- Cash on hand: $115,952 (Oct 31 2024)\n- Operating cash flow: $556,193 (FY2024)  \n  vs $641,282 (FY2023)  \n  Δ = 556193 − 641282 = −$85,089\n- Credit facility: available borrowings $785,880 (Oct 31 2024); actual period-end drawn amount not in provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 7,
+        "expected_number_count": 11,
+        "actual_number_count": 10,
+        "number_overlap_ratio": 0.6363636363636364
+      },
+      "latency_ms": 6320.29,
+      "error": "",
+      "token_f1": 0.2029,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "partial",
+          "score": 0.75,
+          "rationale": "Core ops-cash and credit-available figures match GOLD exactly; cash-on-hand evolution is incomplete (only ending balance shown) and GOLD's summary assessment is absent, so partial credit applies."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.75,
+      "panel_verdict": "partial",
+      "judge_disagreement": false,
+      "judge_score": 0.75,
+      "judge_verdict": "partial"
+    },
+    {
+      "case_id": "6b611c81",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 3,
+      "format": "current",
+      "domain_nodes": 33,
+      "domain_rels": 17,
+      "ctx_chars": 4902,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Cash flow trends for Bath & Body Works (BBWI) from 2021-23 indicate liquidity stability implications and growth investments.",
+      "expected_answer": "The available cash flow data from 2021 to 2023 provides enough insight to assess the company's liquidity and financial stability, especially as it continues to invest in growth. Here are the key points:\n\n1. **Operating Cash Flows**: Although Bath & Body Works, Inc. has generated positive operating cash flows each year, there is a declining trend, from $1,492 million in 2021 to $954 million in 2023. This decline might reduce the cushion the company has available to fund operations and investments, suggesting that future operating performance will be critical to offsetting substantial capital expenditures.\n\n2. **Investing Cash Flows & Capital Expenditures**: The net cash used for investing activities has been significant and relatively stable (around $270–$330 million from 2021 to 2023). Capital expenditures have included investments in new store development, remodels, IT projects, and distribution enhancements. The company’s plan to invest between $300 million and $325 million in 2024 indicates the continued focus on growth initiatives, which, while potentially generating long-term competitive advantages, further strains short-term cash reserves.\n\n3. **Financing Cash Flows**: The financing activities have shown large outflows, although these have decreased notably over time—from a net outflow of $3,188 million in 2021 to $815 million in 2023. The dramatic reduction in financing outflows may reflect a decrease in aggressive debt repayment and share repurchase activity. This decline could help alleviate some immediate liquidity pressures, as less cash is being used to service financing activities, but it also signals adjustments in capital allocation strategies.\n\n4. **Liquidity Implications**: End-of-year cash and cash equivalents have declined from $1,979 million in 2021 and $1,232 million in 2022 to $1,084 million in 2023. This reduction in cash reserves, coupled with ongoing high capital expenditures, might increase the company's short-term liquidity risk. Continued reliance on operating cash flows to support both operations and growth investments will be critical.\n\n5. **Financial Stability Considerations**: From a broader perspective, the company’s consistent positive operating cash flow is a good sign. However, the declining trend in both operating cash flows and cash balances indicates that the company must carefully manage its investments to avoid liquidity strain. If the investments yield the intended enhancements in operational efficiency, revenue growth, or competitive positioning over time, the initial cash outflow could lead to stronger long-term financial stability. Conversely, any underperformance in operating cash generation could pose risks to liquidity, especially when faced with unforeseen market challenges.\n\nIn summary, while the company is pursuing aggressive growth initiatives through significant capital expenditures, it is doing so with decreasing cash reserves and operating cash flows. Hence, maintaining or improving operating performance is crucial to sustaining liquidity and overall financial stability. Management might need to balance growth investments with measures to ensure sufficient working capital and potentially re-evaluate financing strategies if the trend continues.",
+      "answer": "**Cash Flow Trends (BBWI, 2021-2023)**\n\n**Operating**  \n2021: $1,492M  \n2022: $1,144M (Δ –$348M / –23.3%)  \n2023: $954M (Δ –$190M / –16.6%)  \nTrend: Steady decline.\n\n**Investing (net use)**  \n2021: $(259)M (incl. capex $(270)M)  \n2022: $(328)M (Δ +$69M)  \n2023: $(286)M (Δ –$42M)  \nTrend: Moderate spend, peak 2022; supports ongoing growth investments.\n\n**Financing (net use)**  \n2021: $(3,188)M (debt paydown + spin-off + buybacks)  \n2022: $(1,562)M (Δ –$1,626M)  \n2023: $(815)M (Δ –$747M)  \nTrend: Sharply reduced outflows post-2021.\n\n**Cash & Equivalents (end of year)**  \n2021: $1,979M  \n2022: $1,232M (net Δ –$747M)  \n2023: $1,084M (net Δ –$148M)  \nLiquidity: Declining but stable above $1B; no distress signals.",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 3,
+        "expected_number_count": 21,
+        "actual_number_count": 28,
+        "number_overlap_ratio": 0.14285714285714285
+      },
+      "latency_ms": 7408.97,
+      "error": "",
+      "token_f1": 0.1618,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "correct",
+          "score": 1.0,
+          "rationale": "CANDIDATE matches GOLD figures exactly where they overlap and supplies consistent 2022 intermediates; conclusions on trends and implications are identical."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 1.0,
+      "panel_verdict": "correct",
+      "judge_disagreement": false,
+      "judge_score": 1.0,
+      "judge_verdict": "correct"
+    },
+    {
+      "case_id": "6b611c81",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 3,
+      "format": "cypher",
+      "domain_nodes": 33,
+      "domain_rels": 17,
+      "ctx_chars": 4770,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Cash flow trends for Bath & Body Works (BBWI) from 2021-23 indicate liquidity stability implications and growth investments.",
+      "expected_answer": "The available cash flow data from 2021 to 2023 provides enough insight to assess the company's liquidity and financial stability, especially as it continues to invest in growth. Here are the key points:\n\n1. **Operating Cash Flows**: Although Bath & Body Works, Inc. has generated positive operating cash flows each year, there is a declining trend, from $1,492 million in 2021 to $954 million in 2023. This decline might reduce the cushion the company has available to fund operations and investments, suggesting that future operating performance will be critical to offsetting substantial capital expenditures.\n\n2. **Investing Cash Flows & Capital Expenditures**: The net cash used for investing activities has been significant and relatively stable (around $270–$330 million from 2021 to 2023). Capital expenditures have included investments in new store development, remodels, IT projects, and distribution enhancements. The company’s plan to invest between $300 million and $325 million in 2024 indicates the continued focus on growth initiatives, which, while potentially generating long-term competitive advantages, further strains short-term cash reserves.\n\n3. **Financing Cash Flows**: The financing activities have shown large outflows, although these have decreased notably over time—from a net outflow of $3,188 million in 2021 to $815 million in 2023. The dramatic reduction in financing outflows may reflect a decrease in aggressive debt repayment and share repurchase activity. This decline could help alleviate some immediate liquidity pressures, as less cash is being used to service financing activities, but it also signals adjustments in capital allocation strategies.\n\n4. **Liquidity Implications**: End-of-year cash and cash equivalents have declined from $1,979 million in 2021 and $1,232 million in 2022 to $1,084 million in 2023. This reduction in cash reserves, coupled with ongoing high capital expenditures, might increase the company's short-term liquidity risk. Continued reliance on operating cash flows to support both operations and growth investments will be critical.\n\n5. **Financial Stability Considerations**: From a broader perspective, the company’s consistent positive operating cash flow is a good sign. However, the declining trend in both operating cash flows and cash balances indicates that the company must carefully manage its investments to avoid liquidity strain. If the investments yield the intended enhancements in operational efficiency, revenue growth, or competitive positioning over time, the initial cash outflow could lead to stronger long-term financial stability. Conversely, any underperformance in operating cash generation could pose risks to liquidity, especially when faced with unforeseen market challenges.\n\nIn summary, while the company is pursuing aggressive growth initiatives through significant capital expenditures, it is doing so with decreasing cash reserves and operating cash flows. Hence, maintaining or improving operating performance is crucial to sustaining liquidity and overall financial stability. Management might need to balance growth investments with measures to ensure sufficient working capital and potentially re-evaluate financing strategies if the trend continues.",
+      "answer": "**Cash Flow Summary (BBWI, $ millions):**\n\n**Operating:** 2021: 1,492; 2022: 1,144 (Δ -348 / -23.3%); 2023: 954 (Δ -190 / -16.6%).\n\n**Investing (net used):** 2021: (259); 2022: (328) (Δ -69); 2023: (286) (Δ +42). CapEx component 2021: (270); other investing 2021: +11.\n\n**Financing (net used):** 2021: (3,188); 2022: (1,562) (Δ +1,626); 2023: (815) (Δ +747).\n\n**Net change in cash:** 2021: (1,954); 2022: (747); 2023: not directly stated.\n\n**Cash & equivalents (end of year):** 2021: 1,979; 2022: 1,232; 2023: 1,084.\n\nAll figures from provided 10-K cash-flow nodes; no liquidity ratios or growth-investment commentary stated in context.",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 3,
+        "expected_number_count": 21,
+        "actual_number_count": 27,
+        "number_overlap_ratio": 0.14285714285714285
+      },
+      "latency_ms": 5642.49,
+      "error": "",
+      "token_f1": 0.1777,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "correct",
+          "score": 1.0,
+          "rationale": "All numerical values, signs, and trends in CANDIDATE exactly match GOLD; CANDIDATE correctly withholds interpretive commentary absent from source context."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 1.0,
+      "panel_verdict": "correct",
+      "judge_disagreement": false,
+      "judge_score": 1.0,
+      "judge_verdict": "correct"
+    },
+    {
+      "case_id": "6b611c81",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 3,
+      "format": "nl",
+      "domain_nodes": 33,
+      "domain_rels": 17,
+      "ctx_chars": 4253,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Cash flow trends for Bath & Body Works (BBWI) from 2021-23 indicate liquidity stability implications and growth investments.",
+      "expected_answer": "The available cash flow data from 2021 to 2023 provides enough insight to assess the company's liquidity and financial stability, especially as it continues to invest in growth. Here are the key points:\n\n1. **Operating Cash Flows**: Although Bath & Body Works, Inc. has generated positive operating cash flows each year, there is a declining trend, from $1,492 million in 2021 to $954 million in 2023. This decline might reduce the cushion the company has available to fund operations and investments, suggesting that future operating performance will be critical to offsetting substantial capital expenditures.\n\n2. **Investing Cash Flows & Capital Expenditures**: The net cash used for investing activities has been significant and relatively stable (around $270–$330 million from 2021 to 2023). Capital expenditures have included investments in new store development, remodels, IT projects, and distribution enhancements. The company’s plan to invest between $300 million and $325 million in 2024 indicates the continued focus on growth initiatives, which, while potentially generating long-term competitive advantages, further strains short-term cash reserves.\n\n3. **Financing Cash Flows**: The financing activities have shown large outflows, although these have decreased notably over time—from a net outflow of $3,188 million in 2021 to $815 million in 2023. The dramatic reduction in financing outflows may reflect a decrease in aggressive debt repayment and share repurchase activity. This decline could help alleviate some immediate liquidity pressures, as less cash is being used to service financing activities, but it also signals adjustments in capital allocation strategies.\n\n4. **Liquidity Implications**: End-of-year cash and cash equivalents have declined from $1,979 million in 2021 and $1,232 million in 2022 to $1,084 million in 2023. This reduction in cash reserves, coupled with ongoing high capital expenditures, might increase the company's short-term liquidity risk. Continued reliance on operating cash flows to support both operations and growth investments will be critical.\n\n5. **Financial Stability Considerations**: From a broader perspective, the company’s consistent positive operating cash flow is a good sign. However, the declining trend in both operating cash flows and cash balances indicates that the company must carefully manage its investments to avoid liquidity strain. If the investments yield the intended enhancements in operational efficiency, revenue growth, or competitive positioning over time, the initial cash outflow could lead to stronger long-term financial stability. Conversely, any underperformance in operating cash generation could pose risks to liquidity, especially when faced with unforeseen market challenges.\n\nIn summary, while the company is pursuing aggressive growth initiatives through significant capital expenditures, it is doing so with decreasing cash reserves and operating cash flows. Hence, maintaining or improving operating performance is crucial to sustaining liquidity and overall financial stability. Management might need to balance growth investments with measures to ensure sufficient working capital and potentially re-evaluate financing strategies if the trend continues.",
+      "answer": "**BBWI Cash Flow Summary (2021-2023, $ millions):**\n\n- Operating: 2021 $1,492; 2022 $1,144; 2023 $954\n- Investing: 2021 $(259); 2022 $(328); 2023 $(286)\n- Financing: 2021 $(3,188); 2022 $(1,562); 2023 $(815)\n- Net Δ Cash: 2021 $(1,954); 2022 $(747); 2023 $(148)\n- Ending Cash: 2021 $1,979; 2022 $1,232; 2023 $1,084\n\nAll figures from provided 10-K context.",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 3,
+        "expected_number_count": 21,
+        "actual_number_count": 20,
+        "number_overlap_ratio": 0.14285714285714285
+      },
+      "latency_ms": 6245.3,
+      "error": "",
+      "token_f1": 0.1273,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "correct",
+          "score": 1.0,
+          "rationale": "CANDIDATE reports identical figures and trends for all overlapping items in GOLD (operating, financing, cash balances) plus consistent additional detail; no contradictions or fabrications."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 1.0,
+      "panel_verdict": "correct",
+      "judge_disagreement": false,
+      "judge_score": 1.0,
+      "judge_verdict": "correct"
+    },
+    {
+      "case_id": "6b611c81",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 3,
+      "format": "table",
+      "domain_nodes": 33,
+      "domain_rels": 17,
+      "ctx_chars": 4443,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "Cash flow trends for Bath & Body Works (BBWI) from 2021-23 indicate liquidity stability implications and growth investments.",
+      "expected_answer": "The available cash flow data from 2021 to 2023 provides enough insight to assess the company's liquidity and financial stability, especially as it continues to invest in growth. Here are the key points:\n\n1. **Operating Cash Flows**: Although Bath & Body Works, Inc. has generated positive operating cash flows each year, there is a declining trend, from $1,492 million in 2021 to $954 million in 2023. This decline might reduce the cushion the company has available to fund operations and investments, suggesting that future operating performance will be critical to offsetting substantial capital expenditures.\n\n2. **Investing Cash Flows & Capital Expenditures**: The net cash used for investing activities has been significant and relatively stable (around $270–$330 million from 2021 to 2023). Capital expenditures have included investments in new store development, remodels, IT projects, and distribution enhancements. The company’s plan to invest between $300 million and $325 million in 2024 indicates the continued focus on growth initiatives, which, while potentially generating long-term competitive advantages, further strains short-term cash reserves.\n\n3. **Financing Cash Flows**: The financing activities have shown large outflows, although these have decreased notably over time—from a net outflow of $3,188 million in 2021 to $815 million in 2023. The dramatic reduction in financing outflows may reflect a decrease in aggressive debt repayment and share repurchase activity. This decline could help alleviate some immediate liquidity pressures, as less cash is being used to service financing activities, but it also signals adjustments in capital allocation strategies.\n\n4. **Liquidity Implications**: End-of-year cash and cash equivalents have declined from $1,979 million in 2021 and $1,232 million in 2022 to $1,084 million in 2023. This reduction in cash reserves, coupled with ongoing high capital expenditures, might increase the company's short-term liquidity risk. Continued reliance on operating cash flows to support both operations and growth investments will be critical.\n\n5. **Financial Stability Considerations**: From a broader perspective, the company’s consistent positive operating cash flow is a good sign. However, the declining trend in both operating cash flows and cash balances indicates that the company must carefully manage its investments to avoid liquidity strain. If the investments yield the intended enhancements in operational efficiency, revenue growth, or competitive positioning over time, the initial cash outflow could lead to stronger long-term financial stability. Conversely, any underperformance in operating cash generation could pose risks to liquidity, especially when faced with unforeseen market challenges.\n\nIn summary, while the company is pursuing aggressive growth initiatives through significant capital expenditures, it is doing so with decreasing cash reserves and operating cash flows. Hence, maintaining or improving operating performance is crucial to sustaining liquidity and overall financial stability. Management might need to balance growth investments with measures to ensure sufficient working capital and potentially re-evaluate financing strategies if the trend continues.",
+      "answer": "**Cash Flow Trends (BBWI, 2021-2023)**\n\n**Operating:**\n- 2021: $1,492\n- 2022: $1,144 (Δ: $1,144 - $1,492 = -$348)\n- 2023: $954 (Δ: $954 - $1,144 = -$190)\n\n**Investing (net):**\n- 2021: -$259 (CapEx: -$270; Other: +$11)\n- 2022: -$328 (Δ: -$328 - (-$259) = -$69)\n- 2023: -$286 (Δ: -$286 - (-$328) = +$42)\n\n**Financing (net):**\n- 2021: -$3,188\n- 2022: -$1,562 (Δ: +$1,626)\n- 2023: -$815 (Δ: +$747)\n\n**Cash & Equivalents (end of year):**\n- 2021: $1,979\n- 2022: $1,232 (Δ: -$747)\n- 2023: $1,084 (Δ: -$148)\n\nAll figures from provided 10-K context; units in millions USD.",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 3,
+        "expected_number_count": 21,
+        "actual_number_count": 27,
+        "number_overlap_ratio": 0.14285714285714285
+      },
+      "latency_ms": 8603.95,
+      "error": "",
+      "token_f1": 0.14,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "correct",
+          "score": 1.0,
+          "rationale": "CANDIDATE reports identical figures and trends for all cash-flow categories and ending cash balances as GOLD, with no contradictions or fabrications."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 1.0,
+      "panel_verdict": "correct",
+      "judge_disagreement": false,
+      "judge_score": 1.0,
+      "judge_verdict": "correct"
+    },
+    {
+      "case_id": "7cc7ebab",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 2,
+      "format": "current",
+      "domain_nodes": 8,
+      "domain_rels": 5,
+      "ctx_chars": 1575,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "How will FY25 capex ($200-225M) impact growth & cash flex for ADP?",
+      "expected_answer": "The data provided, including the forecasted fiscal 2025 capital expenditures range of $200–225 million and the detailed cash flow and cash position from fiscal 2024 and earlier periods, allow us to draw some insights regarding future growth and financial flexibility. Here are the key points:\n\n1. **Consistency in CAPEX Spending and Growth**: The projected CAPEX range for fiscal 2025 (between $200 million and $225 million) is in line with recent levels ($211.7 million in fiscal 2024 and $206.0 million in fiscal 2023). This consistency suggests that the company intends to maintain a stable level of investment in its assets and operations. Such consistent CAPEX spending is often associated with steady future growth if it is targeted at expansion, technology upgrades, or capacity improvements.\n\n2. **Comparison with Current Cash Position**: The consolidated cash position as of fiscal 2024 totaled approximately $10,086 million. Relative to this large liquidity base, the CAPEX outlay for fiscal 2025 is very modest (roughly 2%–2.2% of total cash on hand). This implies that the company is not stretching its balance sheet to fund these investments, thereby preserving its financial flexibility.\n\n3. **Financial Flexibility and Liquidity**: With strong operating cash flows (over $4,000 million in net cash from operating activities in recent years) and a substantial liquid asset base, the company maintains ample financial buffers. The relatively low CAPEX requirements compared to its cash reserves mean that Automatic Data Processing, Inc. can not only fund its growth initiatives without relying heavily on external financing but also potentially manage unexpected downturns or pursue additional strategic investments.\n\n4. **Implications for Future Growth**: The steady investment level suggests that the company will likely continue to invest in its core operations at a pace that supports gradual expansion. Given the healthy liquidity position, there is also the possibility of allocating additional funds to other opportunities (such as acquisitions or R&D) if warranted by market conditions.\n\nIn summary, the forecasted fiscal 2025 CAPEX range indicates that the company’s ongoing investment in its operational capacity is sustainable, without compromising its robust cash position. This sets a foundation for steady growth while preserving significant financial flexibility to respond to changing market conditions or unexpected opportunities.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 17,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2752.77,
+      "error": "",
+      "token_f1": 0.0214,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context', which the rules explicitly classify as incorrect when GOLD contains a substantive answer to the question."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "7cc7ebab",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 2,
+      "format": "cypher",
+      "domain_nodes": 8,
+      "domain_rels": 5,
+      "ctx_chars": 1536,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "How will FY25 capex ($200-225M) impact growth & cash flex for ADP?",
+      "expected_answer": "The data provided, including the forecasted fiscal 2025 capital expenditures range of $200–225 million and the detailed cash flow and cash position from fiscal 2024 and earlier periods, allow us to draw some insights regarding future growth and financial flexibility. Here are the key points:\n\n1. **Consistency in CAPEX Spending and Growth**: The projected CAPEX range for fiscal 2025 (between $200 million and $225 million) is in line with recent levels ($211.7 million in fiscal 2024 and $206.0 million in fiscal 2023). This consistency suggests that the company intends to maintain a stable level of investment in its assets and operations. Such consistent CAPEX spending is often associated with steady future growth if it is targeted at expansion, technology upgrades, or capacity improvements.\n\n2. **Comparison with Current Cash Position**: The consolidated cash position as of fiscal 2024 totaled approximately $10,086 million. Relative to this large liquidity base, the CAPEX outlay for fiscal 2025 is very modest (roughly 2%–2.2% of total cash on hand). This implies that the company is not stretching its balance sheet to fund these investments, thereby preserving its financial flexibility.\n\n3. **Financial Flexibility and Liquidity**: With strong operating cash flows (over $4,000 million in net cash from operating activities in recent years) and a substantial liquid asset base, the company maintains ample financial buffers. The relatively low CAPEX requirements compared to its cash reserves mean that Automatic Data Processing, Inc. can not only fund its growth initiatives without relying heavily on external financing but also potentially manage unexpected downturns or pursue additional strategic investments.\n\n4. **Implications for Future Growth**: The steady investment level suggests that the company will likely continue to invest in its core operations at a pace that supports gradual expansion. Given the healthy liquidity position, there is also the possibility of allocating additional funds to other opportunities (such as acquisitions or R&D) if warranted by market conditions.\n\nIn summary, the forecasted fiscal 2025 CAPEX range indicates that the company’s ongoing investment in its operational capacity is sustainable, without compromising its robust cash position. This sets a foundation for steady growth while preserving significant financial flexibility to respond to changing market conditions or unexpected opportunities.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 17,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2702.33,
+      "error": "",
+      "token_f1": 0.0214,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in context' while GOLD provides a full analysis of capex consistency, modest scale vs. cash, and preserved flexibility/growth support."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "7cc7ebab",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 2,
+      "format": "nl",
+      "domain_nodes": 8,
+      "domain_rels": 5,
+      "ctx_chars": 1379,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "How will FY25 capex ($200-225M) impact growth & cash flex for ADP?",
+      "expected_answer": "The data provided, including the forecasted fiscal 2025 capital expenditures range of $200–225 million and the detailed cash flow and cash position from fiscal 2024 and earlier periods, allow us to draw some insights regarding future growth and financial flexibility. Here are the key points:\n\n1. **Consistency in CAPEX Spending and Growth**: The projected CAPEX range for fiscal 2025 (between $200 million and $225 million) is in line with recent levels ($211.7 million in fiscal 2024 and $206.0 million in fiscal 2023). This consistency suggests that the company intends to maintain a stable level of investment in its assets and operations. Such consistent CAPEX spending is often associated with steady future growth if it is targeted at expansion, technology upgrades, or capacity improvements.\n\n2. **Comparison with Current Cash Position**: The consolidated cash position as of fiscal 2024 totaled approximately $10,086 million. Relative to this large liquidity base, the CAPEX outlay for fiscal 2025 is very modest (roughly 2%–2.2% of total cash on hand). This implies that the company is not stretching its balance sheet to fund these investments, thereby preserving its financial flexibility.\n\n3. **Financial Flexibility and Liquidity**: With strong operating cash flows (over $4,000 million in net cash from operating activities in recent years) and a substantial liquid asset base, the company maintains ample financial buffers. The relatively low CAPEX requirements compared to its cash reserves mean that Automatic Data Processing, Inc. can not only fund its growth initiatives without relying heavily on external financing but also potentially manage unexpected downturns or pursue additional strategic investments.\n\n4. **Implications for Future Growth**: The steady investment level suggests that the company will likely continue to invest in its core operations at a pace that supports gradual expansion. Given the healthy liquidity position, there is also the possibility of allocating additional funds to other opportunities (such as acquisitions or R&D) if warranted by market conditions.\n\nIn summary, the forecasted fiscal 2025 CAPEX range indicates that the company’s ongoing investment in its operational capacity is sustainable, without compromising its robust cash position. This sets a foundation for steady growth while preserving significant financial flexibility to respond to changing market conditions or unexpected opportunities.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 17,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3534.94,
+      "error": "",
+      "token_f1": 0.0214,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' while GOLD directly analyzes the FY25 capex impact on growth and cash flexibility using the given figures."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "7cc7ebab",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 2,
+      "format": "table",
+      "domain_nodes": 8,
+      "domain_rels": 5,
+      "ctx_chars": 1537,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "How will FY25 capex ($200-225M) impact growth & cash flex for ADP?",
+      "expected_answer": "The data provided, including the forecasted fiscal 2025 capital expenditures range of $200–225 million and the detailed cash flow and cash position from fiscal 2024 and earlier periods, allow us to draw some insights regarding future growth and financial flexibility. Here are the key points:\n\n1. **Consistency in CAPEX Spending and Growth**: The projected CAPEX range for fiscal 2025 (between $200 million and $225 million) is in line with recent levels ($211.7 million in fiscal 2024 and $206.0 million in fiscal 2023). This consistency suggests that the company intends to maintain a stable level of investment in its assets and operations. Such consistent CAPEX spending is often associated with steady future growth if it is targeted at expansion, technology upgrades, or capacity improvements.\n\n2. **Comparison with Current Cash Position**: The consolidated cash position as of fiscal 2024 totaled approximately $10,086 million. Relative to this large liquidity base, the CAPEX outlay for fiscal 2025 is very modest (roughly 2%–2.2% of total cash on hand). This implies that the company is not stretching its balance sheet to fund these investments, thereby preserving its financial flexibility.\n\n3. **Financial Flexibility and Liquidity**: With strong operating cash flows (over $4,000 million in net cash from operating activities in recent years) and a substantial liquid asset base, the company maintains ample financial buffers. The relatively low CAPEX requirements compared to its cash reserves mean that Automatic Data Processing, Inc. can not only fund its growth initiatives without relying heavily on external financing but also potentially manage unexpected downturns or pursue additional strategic investments.\n\n4. **Implications for Future Growth**: The steady investment level suggests that the company will likely continue to invest in its core operations at a pace that supports gradual expansion. Given the healthy liquidity position, there is also the possibility of allocating additional funds to other opportunities (such as acquisitions or R&D) if warranted by market conditions.\n\nIn summary, the forecasted fiscal 2025 CAPEX range indicates that the company’s ongoing investment in its operational capacity is sustainable, without compromising its robust cash position. This sets a foundation for steady growth while preserving significant financial flexibility to respond to changing market conditions or unexpected opportunities.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 17,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 2946.89,
+      "error": "",
+      "token_f1": 0.0214,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context', which the rules explicitly classify as INCORRECT when GOLD contains a substantive analysis of the FY25 capex impact."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "e55b23c3",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 3,
+      "format": "current",
+      "domain_nodes": 69,
+      "domain_rels": 10,
+      "ctx_chars": 7683,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "MTCH's (Match Group) rev mix impacts its val & growth prospects.",
+      "expected_answer": "The provided data allows for a meaningful discussion about how the revenue mix affects Match Group’s valuation and future growth potential. A few key points emerge:\n\n1. **Revenue Breakdown and Calculations**: In 2023 the total revenue was approximately $3,364 million, of which direct revenue (largely subscription-based) was about $3,308 million. This means that roughly 98% of the revenue comes from subscription services, with the remaining 2% from indirect (advertising) revenue. A similar distribution is observed in prior years. This heavy weighting toward direct subscription revenue highlights the company’s reliance on recurring, membership-based income.\n\n2. **Stability and Predictability**: Subscription revenues tend to be more stable and predictable than advertising revenues. Investors typically favor companies with high recurring revenue as they tend to yield more reliable cash flows, which in turn can support higher valuation multiples. This aspect of the business model can play into a higher valuation, particularly if the subscriber base grows consistently or churn rates remain low.\n\n3. **Valuation Considerations and Risk Profile**: Valuing a business that is predominantly subscription-based generally involves expectations of steady renewals and the potential for upselling additional services. In contrast, advertising revenues can be more cyclical and dependent on broader economic conditions. Given Match Group’s heavy reliance on subscriptions, its valuation is more likely to reflect the stability and growth potential of its user base, rather than the volatility often seen in ad-driven businesses. However, this also means that both its growth and valuation will be closely tied to its ability to attract and retain subscribers across its various brands.\n\n4. **Future Growth Potential**: With nearly all revenue coming from subscriptions, the company’s future growth is tied primarily to expanding its user base, improving subscriber engagement, and potentially increasing pricing or launching new subscription-based services. While the small percentage of advertising revenue currently provides diversification, it is unlikely to be a significant driver of future growth unless the company strategically leverages its digital platforms to boost this segment.\n\nIn summary, the revenue mix, dominated by subscription-based direct revenue, supports a valuation that reflects stability, recurring cash flows, and the potential for sustainable future growth. Investors will likely view this model as positive for long-term prospects, provided the company continues to successfully grow and monetize its user base while managing competitive pressures.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 9,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 3976.65,
+      "error": "",
+      "token_f1": 0.0152,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE refuses with 'not in the provided context' while GOLD provides a full substantive analysis; per rules this is scored incorrect."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "e55b23c3",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 3,
+      "format": "cypher",
+      "domain_nodes": 69,
+      "domain_rels": 10,
+      "ctx_chars": 7494,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "MTCH's (Match Group) rev mix impacts its val & growth prospects.",
+      "expected_answer": "The provided data allows for a meaningful discussion about how the revenue mix affects Match Group’s valuation and future growth potential. A few key points emerge:\n\n1. **Revenue Breakdown and Calculations**: In 2023 the total revenue was approximately $3,364 million, of which direct revenue (largely subscription-based) was about $3,308 million. This means that roughly 98% of the revenue comes from subscription services, with the remaining 2% from indirect (advertising) revenue. A similar distribution is observed in prior years. This heavy weighting toward direct subscription revenue highlights the company’s reliance on recurring, membership-based income.\n\n2. **Stability and Predictability**: Subscription revenues tend to be more stable and predictable than advertising revenues. Investors typically favor companies with high recurring revenue as they tend to yield more reliable cash flows, which in turn can support higher valuation multiples. This aspect of the business model can play into a higher valuation, particularly if the subscriber base grows consistently or churn rates remain low.\n\n3. **Valuation Considerations and Risk Profile**: Valuing a business that is predominantly subscription-based generally involves expectations of steady renewals and the potential for upselling additional services. In contrast, advertising revenues can be more cyclical and dependent on broader economic conditions. Given Match Group’s heavy reliance on subscriptions, its valuation is more likely to reflect the stability and growth potential of its user base, rather than the volatility often seen in ad-driven businesses. However, this also means that both its growth and valuation will be closely tied to its ability to attract and retain subscribers across its various brands.\n\n4. **Future Growth Potential**: With nearly all revenue coming from subscriptions, the company’s future growth is tied primarily to expanding its user base, improving subscriber engagement, and potentially increasing pricing or launching new subscription-based services. While the small percentage of advertising revenue currently provides diversification, it is unlikely to be a significant driver of future growth unless the company strategically leverages its digital platforms to boost this segment.\n\nIn summary, the revenue mix, dominated by subscription-based direct revenue, supports a valuation that reflects stability, recurring cash flows, and the potential for sustainable future growth. Investors will likely view this model as positive for long-term prospects, provided the company continues to successfully grow and monetize its user base while managing competitive pressures.",
+      "answer": "not in the provided context",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 0,
+        "expected_number_count": 9,
+        "actual_number_count": 0,
+        "number_overlap_ratio": 0.0
+      },
+      "latency_ms": 4888.02,
+      "error": "",
+      "token_f1": 0.0152,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "Candidate refuses with 'not in the provided context' while GOLD supplies a full factual discussion of revenue mix, valuation impact, and growth; this is explicitly INCORRECT per rules."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "e55b23c3",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 3,
+      "format": "nl",
+      "domain_nodes": 69,
+      "domain_rels": 10,
+      "ctx_chars": 6966,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "MTCH's (Match Group) rev mix impacts its val & growth prospects.",
+      "expected_answer": "The provided data allows for a meaningful discussion about how the revenue mix affects Match Group’s valuation and future growth potential. A few key points emerge:\n\n1. **Revenue Breakdown and Calculations**: In 2023 the total revenue was approximately $3,364 million, of which direct revenue (largely subscription-based) was about $3,308 million. This means that roughly 98% of the revenue comes from subscription services, with the remaining 2% from indirect (advertising) revenue. A similar distribution is observed in prior years. This heavy weighting toward direct subscription revenue highlights the company’s reliance on recurring, membership-based income.\n\n2. **Stability and Predictability**: Subscription revenues tend to be more stable and predictable than advertising revenues. Investors typically favor companies with high recurring revenue as they tend to yield more reliable cash flows, which in turn can support higher valuation multiples. This aspect of the business model can play into a higher valuation, particularly if the subscriber base grows consistently or churn rates remain low.\n\n3. **Valuation Considerations and Risk Profile**: Valuing a business that is predominantly subscription-based generally involves expectations of steady renewals and the potential for upselling additional services. In contrast, advertising revenues can be more cyclical and dependent on broader economic conditions. Given Match Group’s heavy reliance on subscriptions, its valuation is more likely to reflect the stability and growth potential of its user base, rather than the volatility often seen in ad-driven businesses. However, this also means that both its growth and valuation will be closely tied to its ability to attract and retain subscribers across its various brands.\n\n4. **Future Growth Potential**: With nearly all revenue coming from subscriptions, the company’s future growth is tied primarily to expanding its user base, improving subscriber engagement, and potentially increasing pricing or launching new subscription-based services. While the small percentage of advertising revenue currently provides diversification, it is unlikely to be a significant driver of future growth unless the company strategically leverages its digital platforms to boost this segment.\n\nIn summary, the revenue mix, dominated by subscription-based direct revenue, supports a valuation that reflects stability, recurring cash flows, and the potential for sustainable future growth. Investors will likely view this model as positive for long-term prospects, provided the company continues to successfully grow and monetize its user base while managing competitive pressures.",
+      "answer": "**Revenue Mix (Direct Rev, $000s) & Growth:**\n\nTinder share: 2023=58.0% ($1,917,629 / $3,308,131), 2022=57.3% ($1,794,467 / $3,130,221), 2021=56.4% ($1,649,757 / $2,922,871).  \nYoY growth: 2023=+6.9% (($1,917,629-$1,794,467)/$1,794,467), 2022=+8.8%.\n\nHinge share: 2023=12.0% ($396,485), 2022=9.1% ($283,668), 2021=6.7% ($196,538).  \nYoY growth: 2023=+39.8%, 2022=+44.3%.\n\nMatch Group Asia share: 2023=9.1% ($302,591), 2022=10.3% ($321,714), 2021=9.2% ($268,642).  \nYoY growth: 2023=-5.9%, 2022=+19.8%.\n\nEvergreen & Emerging share: 2023=20.9% ($691,426), 2022=23.3% ($730,372), 2021=27.6% ($807,934).  \nYoY growth: 2023=-5.3%, 2022=-9.6%.\n\nGeographic mix (Direct Rev): Americas 2023=52.7% ($1,744,586), Europe 28.2% ($933,413), APAC & Other 19.0% ($630,132). Total rev 2023=$3,364,504 (incl. indirect $56,373).\n\n**Impact on growth prospects:** Higher-margin growth concentrated in Tinder/Hinge (combined share rose from 63.1% to 70.0%); declining segments (Asia+Evergreen) reduced overall growth rate. Operating income rose to $916,896 (2023) from $515,005 (2022). Net income $651,539 (2023) vs $361,946 (2022). Diluted EPS $2.26 (2023) vs $1.24 (2022). All figures from provided 10-K context.",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 1,
+        "expected_number_count": 9,
+        "actual_number_count": 56,
+        "number_overlap_ratio": 0.1111111111111111
+      },
+      "latency_ms": 8084.25,
+      "error": "",
+      "token_f1": 0.1234,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE addresses brand-level direct revenue shares and profitability metrics instead of GOLD's core focus on ~98% subscription vs 2% ad mix, its stability implications, and resulting valuation/growth effects."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    },
+    {
+      "case_id": "e55b23c3",
+      "slice": "S5_FN_MULTI",
+      "n_refs": 3,
+      "format": "table",
+      "domain_nodes": 69,
+      "domain_rels": 10,
+      "ctx_chars": 6126,
+      "model": "grok/grok-4.3",
+      "prompt_hash": "ad765bac58",
+      "ontology_hash": "799a63e842",
+      "query": "MTCH's (Match Group) rev mix impacts its val & growth prospects.",
+      "expected_answer": "The provided data allows for a meaningful discussion about how the revenue mix affects Match Group’s valuation and future growth potential. A few key points emerge:\n\n1. **Revenue Breakdown and Calculations**: In 2023 the total revenue was approximately $3,364 million, of which direct revenue (largely subscription-based) was about $3,308 million. This means that roughly 98% of the revenue comes from subscription services, with the remaining 2% from indirect (advertising) revenue. A similar distribution is observed in prior years. This heavy weighting toward direct subscription revenue highlights the company’s reliance on recurring, membership-based income.\n\n2. **Stability and Predictability**: Subscription revenues tend to be more stable and predictable than advertising revenues. Investors typically favor companies with high recurring revenue as they tend to yield more reliable cash flows, which in turn can support higher valuation multiples. This aspect of the business model can play into a higher valuation, particularly if the subscriber base grows consistently or churn rates remain low.\n\n3. **Valuation Considerations and Risk Profile**: Valuing a business that is predominantly subscription-based generally involves expectations of steady renewals and the potential for upselling additional services. In contrast, advertising revenues can be more cyclical and dependent on broader economic conditions. Given Match Group’s heavy reliance on subscriptions, its valuation is more likely to reflect the stability and growth potential of its user base, rather than the volatility often seen in ad-driven businesses. However, this also means that both its growth and valuation will be closely tied to its ability to attract and retain subscribers across its various brands.\n\n4. **Future Growth Potential**: With nearly all revenue coming from subscriptions, the company’s future growth is tied primarily to expanding its user base, improving subscriber engagement, and potentially increasing pricing or launching new subscription-based services. While the small percentage of advertising revenue currently provides diversification, it is unlikely to be a significant driver of future growth unless the company strategically leverages its digital platforms to boost this segment.\n\nIn summary, the revenue mix, dominated by subscription-based direct revenue, supports a valuation that reflects stability, recurring cash flows, and the potential for sustainable future growth. Investors will likely view this model as positive for long-term prospects, provided the company continues to successfully grow and monetize its user base while managing competitive pressures.",
+      "answer": "**Revenue Mix (Direct Rev, $000s, FY2023):**  \nTinder: $1,917,629 (58.0% of $3,308,131 total direct)  \nHinge: $396,485 (12.0%)  \nMatch Group Asia: $302,591 (9.1%)  \nEvergreen & Emerging: $691,426 (20.9%)  \n\n**YoY Growth (Direct Rev):**  \nTinder 2023: +6.86% ($1,917,629 vs $1,794,467)  \nHinge 2023: +39.77% ($396,485 vs $283,668)  \nMatch Group Asia 2023: -5.94% ($302,591 vs $321,714)  \nEvergreen & Emerging 2023: -5.33% ($691,426 vs $730,372)  \n\n**Geographic Mix (Direct Rev, $000s, FY2023):**  \nAmericas: $1,744,586 (+7.09% YoY)  \nEurope: $933,413 (+9.96% YoY)  \nAPAC & Other: $630,132 (-3.39% YoY)  \n\nTotal consolidated revenue: $3,364,504 (2023) vs $3,188,843 (2022, +5.51%). All figures from provided 10-K context only.",
+      "evaluation": {
+        "contains_match": false,
+        "shared_numbers": 1,
+        "expected_number_count": 9,
+        "actual_number_count": 30,
+        "number_overlap_ratio": 0.1111111111111111
+      },
+      "latency_ms": 18834.11,
+      "error": "",
+      "token_f1": 0.0925,
+      "judge_per_model": {
+        "grok/grok-4.3": {
+          "verdict": "incorrect",
+          "score": 0.0,
+          "rationale": "CANDIDATE supplies unrelated brand/geo splits instead of GOLD's core analysis on subscription dominance driving valuation stability and subscriber-led growth."
+        }
+      },
+      "judge_models": [
+        "grok/grok-4.3"
+      ],
+      "panel_score": 0.0,
+      "panel_verdict": "incorrect",
+      "judge_disagreement": false,
+      "judge_score": 0.0,
+      "judge_verdict": "incorrect"
+    }
+  ]
+}
