@@ -1,8 +1,8 @@
 # FinDER Knowledge Graph Experiment
 ## Vector vs Graph vs Hybrid · FIBO Ontology Size Sweep · Serialization Format
 
-**기간**: 2026-06-03 · **LLM**: grok/grok-4.3 (non-reasoning, fallback: openai/gpt-4o-mini)  
-**인프라**: DozerDB · LanceDB · Opik (`oksusu` / `sy-0602-grok`)  
+**기간**: 2026-04 ~ 2026-06 · **LLM**: grok/grok-4.3 (non-reasoning, fallback: openai/gpt-4o-mini)  
+**인프라**: DozerDB · LanceDB · Opik (`your-workspace` / `your-project`)  
 **코드**: [`scripts/benchmarks/`](../scripts/benchmarks/) · **결과**: [`outputs/evaluation/`](../outputs/evaluation/)
 
 ---
@@ -418,7 +418,7 @@ python scripts/benchmarks/finder_format_experiment.py --dry-run
 
 ### Opik UI 필터
 
-**URL**: https://www.comet.com/opik → workspace `oksusu` → project `sy-0602-grok`
+**URL**: https://www.comet.com/opik → workspace `your-workspace` → project `your-project`
 
 ```
 # 포맷 실험 전체
@@ -440,7 +440,7 @@ dataset_index:S2_FIN_NONQUANT_MULTI/4f87bbef
 
 ### Neo4j Browser
 
-**접속**: `http://34.226.142.183:7474` → DB 선택: `finderquick` 또는 `findersweepv2`
+**접속**: `http://your-neo4j-host:7474` → DB 선택: `finderquick` 또는 `findersweepv2`
 
 ```cypher
 -- 케이스 도메인 노드 보기 (예: PFE 케이스)
@@ -499,9 +499,9 @@ CLAUDE.md §20 기준:
 LLM:        grok/grok-4.3 (fallback: openai/gpt-4o-mini)
 Embedding:  text-embedding-3-small (1536d, OpenAI)
 Vector DB:  LanceDB (.seocho/lancedb/finder_vector_0530)
-Graph DB:   DozerDB bolt://34.226.142.183:7687
+Graph DB:   DozerDB bolt://your-neo4j-host:7687
             findersweepv2 (sweep-v2), finderquick (quick-v1/fmt-v1)
-Opik:       hosted, workspace=oksusu, project=sy-0602-grok
+Opik:       hosted, workspace=your-workspace, project=your-project
 Seed:       42 (전체 실험 고정)
 ```
 
@@ -532,14 +532,22 @@ outputs/evaluation/
 
 ### C. 주요 발견 타임라인
 
-| 날짜 | 발견 |
-|------|------|
-| 2026-06-03 | vector baseline 완료 (S1=0.432 최고, S6=0.165 대조군 정상) |
-| 2026-06-03 | medium/large arm이 단문서(588자)에서 추출 실패 (스키마:문서 비율 문제) |
-| 2026-06-03 | `_graph_context()` 인프라 관계 제거 + source text fallback 적용 |
-| 2026-06-03 | sweep-v2: S2에서 small(0.644) > medium(0.400) — Goldilocks 역전 |
-| 2026-06-03 | quick-v1: S2 hybrid(0.417) > vector(0.355) 확인 |
-| 2026-06-03 | quick-v1 judge: S4 hybrid(0.500) ≈ vector(0.490) — 서술형 대등 |
-| 2026-06-03 | fmt-v1: S2 포맷 무관 0점 → 추출 문제, S5는 포맷 문제로 병목 분리 |
-| 2026-06-03 | fmt-v1 judge: nl 최적(0.250), S5 nl=0.500 > table=current=0.438 |
-| 2026-06-03 | cypher가 S4 서술형에서 유일하게 0점 — Cypher 포맷 부적합 확인 |
+| 기간 | 단계 | 내용 |
+|------|------|------|
+| 2026-04 말 | 탐색 | SEOCHO·FinDER 개요 파악, Vector/Graph RAG 기초 이해 |
+| 2026-04 말 | 탐색 | Graph 외부 멘토링 — 지식 그래프 설계 방향 수립 |
+| 2026-05 초 | 환경 구성 | FIBO 온톨로지 모듈 선정, LLM backend(grok) 연동, Opik 관측성 설정 |
+| 2026-05 초 | 환경 구성 | Opik 트레이스 태그 규약 확립 (필수 4개 태그, 10자 hex) |
+| 2026-05 중 | 개발 | 지식베이스 구축 실습, 그래프 분석 에이전트 테스트, KG 품질 확인 |
+| 2026-05 중 | 개발 | SEOCHO 기반 KG indexing/query 파이프라인 실습 |
+| 2026-05 중 | 개발 | `bench_common.py` 공용 유틸, `finder_judge.py` 오프라인 채점 구현 |
+| 2026-05 말 | 개발 | AWS Summit 참가 — FIBO 적용 사례 검토, KG 빌드 방법론 구체화 |
+| 2026-05 말 | 개발 | vector baseline 설계 및 LanceDB 임베딩 파이프라인 구현 |
+| 2026-05 말 | 개발 | `grok_meta_system_prompt.md` KG 추출 프롬프트 완성 |
+| 2026-06-03 | 실험 | 4-arm(non-ontology/small/medium/large) × vector/graph/hybrid 비교 실험 실행 |
+| 2026-06-03 | 발견 | medium/large arm이 단문서에서 추출 실패 — 스키마:문서 비율 문제 확인 |
+| 2026-06-03 | 수정 | `_graph_context()` 인프라 관계 제거 + source text fallback 적용 |
+| 2026-06-03 | 결과 | vector baseline 완료 (S1=0.432 최고, S6=0.165 대조군 정상) |
+| 2026-06-03 | 결과 | sweep-v2: S2에서 small(0.644) > medium(0.400) — Goldilocks 역전 |
+| 2026-06-03 | 결과 | quick-v1: S2 hybrid(0.417) > vector(0.355), S4 judge hybrid≈vector |
+| 2026-06-03 | 결과 | fmt-v1: S2 추출 문제 vs S5 포맷 문제로 병목 분리, nl 포맷 최적 확인 |
